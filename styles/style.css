@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Set border box to be inherited */
+}
+
+html {
+  font-size: 62.5%;
+  /* allows user to zom in on page (change font size) px won't work*/
+}
+@media only screen and (min-width: 187.5em) {
+  html {
+    font-size: 112.5%;
+  }
+}
+@media only screen and (max-width: 187.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 162.5em) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@media only screen and (max-width: 125em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
