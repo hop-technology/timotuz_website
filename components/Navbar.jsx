@@ -1,17 +1,27 @@
+import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 import MobNav from './MobNav'
 
 const Navbar = () => {
   const [mobNav, setMobNav] = useState(false)
   const Toggle = () => setMobNav(!mobNav)
 
+  const router = useRouter()
+  const location = router.asPath
+  const homeActive = ['/'].includes(location) ? 'active' : ''
+  const propertiesActive = ['/properties'].includes(location) ? 'active' : ''
+  const aboutActive = ['/aboutUs'].includes(location) ? 'active' : ''
+  const contactActive = ['/contactUs'].includes(location) ? 'active' : ''
+
   return (
     <div className='navbar'>
       <div className='navbar__image'>
         <Link href='/' passHref>
           <Image
+            priority
+            placeholder='empty'
             src='/logo-with-text.svg'
             height={121}
             width={388}
@@ -25,27 +35,29 @@ const Navbar = () => {
         <span></span>
         <span></span>
       </button>
-      <MobNav show={mobNav} title='My Mobile nav' close={Toggle} />
+      <MobNav show={mobNav} close={Toggle} />
 
       <div className='navbar__links'>
         <div className='navbar__links--link'>
           <Link href='/' passHref>
-            <a className='navbar__links--a'>Hem</a>
+            <a className={`navbar__links--a ${homeActive}`}>Hem</a>
           </Link>
         </div>
         <div className='navbar__links--link'>
           <Link href='/properties' passHref>
-            <a className='navbar__links--a'>Fastigheter</a>
+            <a className={`navbar__links--a ${propertiesActive}`}>
+              Fastigheter
+            </a>
           </Link>
         </div>
         <div className='navbar__links--link'>
           <Link href='/aboutUs' passHref>
-            <a className='navbar__links--a'>Om oss</a>
+            <a className={`navbar__links--a ${aboutActive}`}>Om oss</a>
           </Link>
         </div>
         <div className='navbar__links--link'>
           <Link href='/contactUs' passHref>
-            <a className='navbar__links--a'>Kontakt</a>
+            <a className={`navbar__links--a ${contactActive}`}>Kontakt</a>
           </Link>
         </div>
       </div>
