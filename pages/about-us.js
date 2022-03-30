@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className='about_us'>
       <div className='about_us__image'>
-        <Image src='/people_2.jpg' width={980} height={1200} alt='people' />
+        <Image src='/people_2.jpg' width={2000} height={2200} alt='people' />
       </div>
       <div className='about_us__text_container'>
         <div className='about_us__text'>

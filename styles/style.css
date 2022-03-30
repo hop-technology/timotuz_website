@@ -72,11 +72,10 @@ body {
 .about_us__image {
   width: 50%;
   object-fit: fill;
-}
-@media only screen and (max-width: 75em) {
-  .about_us__image {
-    width: 50%;
-  }
+  /* 
+      @include respond(laptop-M) {
+        width: 50%;
+      } */
 }
 @media only screen and (max-width: 56.25em) {
   .about_us__image {

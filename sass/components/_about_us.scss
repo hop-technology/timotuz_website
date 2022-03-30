@@ -12,10 +12,10 @@
   &__image {
     width: 50%;
     object-fit: fill;
-
+/* 
     @include respond(laptop-M) {
       width: 50%;
-    }
+    } */
 
     @include respond(tab-port) {
       width: 100%;
