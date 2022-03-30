@@ -1,11 +1,21 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div>LOGO</div>
-      <div className="navbar__links">
+      <Link href='#' passHref>
+        <Image
+          src='/logo-with-text.svg'
+          height={121}
+          width={388}
+          as='img/svg'
+          alt='Timotuz logo'
+        />
+      </Link>
+
+      <div className='navbar__links'>
         <Link href='#' passHref>
           <a className='navbar__links--link'>Hem</a>
         </Link>
