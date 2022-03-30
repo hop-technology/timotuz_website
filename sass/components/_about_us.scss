@@ -2,16 +2,22 @@
   display: flex;
   flex-direction: row;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
   @include respond(phone-L) {
     flex-direction: column;
-    
   }
 
   &__image {
     width: 50%;
     object-fit: fill;
 
-    @include respond(phone-L) {
+    @include respond(laptop-M) {
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
       width: 100%;
     }
   }
@@ -23,7 +29,11 @@
     background-color: $color-primary;
     color: $color-text-light;
 
-    @include respond(phone-L) {
+    @include respond(laptop-M) {
+      width: 50%;
+    }
+
+    @include respond(tab-port) {
       width: 100%;
     }
   }
@@ -34,6 +44,10 @@
 
   &__text {
     margin: 13rem;
+
+    @include respond(phone-L) {
+      margin: 6rem;
+    }
 
     h1 {
       padding-bottom: 2rem;
