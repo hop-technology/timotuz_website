@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+import MobNav from './MobNav'
 
 const Navbar = () => {
+  const [mobNav, setMobNav] = useState(false)
+  const Toggle = () => setMobNav(!mobNav)
+
   return (
     <div className='navbar'>
-      <input type='checkbox' id='burger' />
       <div className='navbar__image'>
         <Link href='/' passHref>
           <Image
@@ -16,14 +20,13 @@ const Navbar = () => {
           />
         </Link>
       </div>
+      <button className='navbar__burger' onClick={() => Toggle()}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <MobNav show={mobNav} title='My Mobile nav' close={Toggle} />
 
-      <div className='navbar__burger'>
-        <label htmlFor='burger'>
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
       <div className='navbar__links'>
         <div className='navbar__links--link'>
           <Link href='/' passHref>
@@ -44,15 +47,6 @@ const Navbar = () => {
           <Link href='/contactUs' passHref>
             <a className='navbar__links--a'>Kontakt</a>
           </Link>
-        </div>
-        <div className='navbar__links--image'>
-          <Image
-            src='/logo.webp'
-            height={446}
-            width={392}
-            as='img/svg'
-            alt='Timotuz logo'
-          />
         </div>
       </div>
     </div>
