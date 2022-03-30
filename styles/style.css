@@ -57,25 +57,17 @@ body {
 
 .about_us {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  background-color: #00474c;
 }
 @media only screen and (max-width: 56.25em) {
   .about_us {
     flex-direction: column;
   }
 }
-@media only screen and (max-width: 32.75em) {
-  .about_us {
-    flex-direction: column;
-  }
-}
 .about_us__image {
   width: 50%;
-  object-fit: fill;
-  /* 
-      @include respond(laptop-M) {
-        width: 50%;
-      } */
+  object-fit: cover;
 }
 @media only screen and (max-width: 56.25em) {
   .about_us__image {
@@ -86,7 +78,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  background-color: #00474c;
   color: #ffffff;
 }
 @media only screen and (max-width: 75em) {
@@ -103,7 +94,7 @@ body {
   margin-left: 10rem;
 }
 .about_us__text {
-  margin: 13rem;
+  margin: 15rem;
 }
 @media only screen and (max-width: 32.75em) {
   .about_us__text {

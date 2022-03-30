@@ -4,7 +4,12 @@ const AboutUs = () => {
   return (
     <div className='about_us'>
       <div className='about_us__image'>
-        <Image src='/people_2.jpg' width={2000} height={2200} alt='people' />
+        <Image
+          src='/people_2.jpg'
+          width={2000}
+          height={2200}
+          alt='couple in living room'
+        />
       </div>
       <div className='about_us__text_container'>
         <div className='about_us__text'>
