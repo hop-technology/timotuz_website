@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   /* Set border box to be inherited */
 }
 
@@ -11,31 +12,37 @@ html {
   font-size: 62.5%;
   /* allows user to zom in on page (change font size) px won't work*/
 }
+
 @media only screen and (min-width: 187.5em) {
   html {
     font-size: 112.5%;
   }
 }
+
 @media only screen and (max-width: 187.5em) {
   html {
     font-size: 100%;
   }
 }
+
 @media only screen and (max-width: 162.5em) {
   html {
     font-size: 87.5%;
   }
 }
+
 @media only screen and (max-width: 125em) {
   html {
     font-size: 75%;
   }
 }
+
 @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
 }
+
 @media only screen and (max-width: 56.25em) {
   html {
     font-size: 50%;
@@ -43,57 +50,50 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   overflow-x: hidden;
 }
 
 body {
   font-display: swap;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   color: #707070;
 }
 
-.about_us {
+.about_us__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-}
-@media only screen and (max-width: 32.75em) {
-  .about_us {
-    flex-direction: column;
-  }
-}
-.about_us__image {
-  width: 50%;
-  object-fit: fill;
-}
-@media only screen and (max-width: 32.75em) {
-  .about_us__image {
-    width: 100%;
-  }
-}
-.about_us__text_container {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  background-color: #00474c;
-  color: #ffffff;
-}
-@media only screen and (max-width: 32.75em) {
-  .about_us__text_container {
-    width: 100%;
-  }
-}
-.about_us__title {
-  margin-left: 10rem;
-}
-.about_us__text {
-  margin: 13rem;
-}
-.about_us__text h1 {
-  padding-bottom: 2rem;
-  font-weight: 400;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-/*# sourceMappingURL=style.css.map */
+.about_us__image {
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about_us__text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+/*# sourceMappingURL=main.css.map */
