@@ -16,7 +16,6 @@
       width: 100%;
       height: auto;
       background-color: $color-primary;
-      padding: 2rem 0;
       box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
       position: absolute;
       top: 6.5rem;
@@ -44,18 +43,23 @@
         color: $color-text-light;
         width: 100%;
         height: calc(100% - 0.7rem);
-        padding: 2rem 0;
+        padding: 2.5rem 0;
         &:hover {
           color: $color-primary-dark;
         }
       }
-
-      &--image {
+      .image-container {
+        background-color: $color-primary-dark;
+        width: 100%;
         display: flex;
-        align-self: center;
-        width: 4.46rem;
-        height: 3.93rem;
-        margin-top: 2rem;
+        justify-content: center;
+        padding: 2rem 0;
+        &--image {
+          display: flex;
+          align-self: center;
+          width: 4.46rem;
+          height: 3.93rem;
+        }
       }
     }
   }

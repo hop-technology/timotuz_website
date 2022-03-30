@@ -28,8 +28,8 @@ const MobNav = ({ show, close }) => {
                   <a className='mob-nav__links--a' onClick={() => close()}>Kontakt</a>
                 </Link>
               </div>
-              <div>
-                <div className='mob-nav__links--image'>
+              <div className='image-container'>
+                <div className='image-container--image'>
                   <Image
                     src='/logo.webp'
                     height={446}

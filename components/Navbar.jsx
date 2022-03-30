@@ -19,15 +19,17 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='navbar__image'>
         <Link href='/' passHref>
-          <Image
-            priority
-            placeholder='empty'
-            src='/logo-with-text.svg'
-            height={121}
-            width={388}
-            as='img/svg'
-            alt='Timotuz logo'
-          />
+          <a>
+            <Image
+              priority
+              placeholder='empty'
+              src='/logo-with-text.svg'
+              height={121}
+              width={388}
+              as='img/svg'
+              alt='Timotuz logo'
+            />
+          </a>
         </Link>
       </div>
       <button className='navbar__burger' onClick={() => Toggle()}>
