@@ -47,4 +47,45 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  font-display: swap;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #707070;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6%;
+  height: 6.5rem;
+  background-color: #00474c;
+  position: fixed;
+  width: 100%;
+}
+.navbar__links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.navbar__links--link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #ffffff;
+  width: auto;
+  height: 100%;
+  padding: 0 1rem;
+}
+.navbar__links--link:hover {
+  background-color: #006168;
+  color: #002f33;
+}
+.navbar__links--link:active {
+  border-bottom: 2px solid red;
+}
+
 /*# sourceMappingURL=style.css.map */
