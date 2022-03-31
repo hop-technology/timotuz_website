@@ -131,6 +131,23 @@ body {
   }
 }
 
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100vh;
+}
+.embla__slide span > img {
+  object-fit: cover;
+  object-Position: "100% -50%";
+}
+
 .mob-nav-bg {
   display: none;
 }
