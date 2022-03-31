@@ -6,6 +6,7 @@
   background-color: $color-primary;
   position: fixed;
   width: 100%;
+  z-index: 1;
 
   &__burger {
     display: none;

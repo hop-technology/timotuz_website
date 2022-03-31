@@ -52,12 +52,14 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  color: #707070;
+  color: #ffffff;
 }
 
 .about_us {
+  position: absolute;
+  top: 6.5rem;
   display: flex;
-  align-items: center;
+  align-content: stretch;
   background-color: #00474c;
 }
 @media only screen and (max-width: 56.25em) {
@@ -65,14 +67,44 @@ body {
     flex-direction: column;
   }
 }
-.about_us__image {
-  width: 50%;
-  object-fit: cover;
+.about_us__image-container {
+  width: 50vw;
+  height: 100vh;
+  position: relative;
 }
 @media only screen and (max-width: 56.25em) {
-  .about_us__image {
-    width: 100%;
+  .about_us__image-container {
+    width: 100vw;
+    height: 60vh;
   }
+}
+.about_us__image-container--image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.about_us__image-container--image span > img {
+  object-fit: cover;
+}
+.about_us__image-container .image-overlay {
+  display: none;
+}
+@media only screen and (max-width: 56.25em) {
+  .about_us__image-container .image-overlay {
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 15, 15, 0.2);
+  }
+}
+.about_us__image-container .image-overlay h1 {
+  font-weight: 400;
+  font-size: 6.4rem;
 }
 .about_us__text_container {
   display: flex;
@@ -80,30 +112,23 @@ body {
   width: 50%;
   color: #ffffff;
 }
-@media only screen and (max-width: 75em) {
-  .about_us__text_container {
-    width: 50%;
-  }
-}
 @media only screen and (max-width: 56.25em) {
   .about_us__text_container {
     width: 100%;
   }
 }
-.about_us__title {
-  margin-left: 10rem;
+.about_us__text_container--text {
+  margin: 5rem 10%;
+  font-weight: 300;
 }
-.about_us__text {
-  margin: 15rem;
-}
-@media only screen and (max-width: 32.75em) {
-  .about_us__text {
-    margin: 6rem;
-  }
-}
-.about_us__text h1 {
+.about_us__text_container--text h1 {
   padding-bottom: 2rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 56.25em) {
+  .about_us__text_container--text h1 {
+    display: none;
+  }
 }
 
 .mob-nav-bg {
@@ -132,6 +157,7 @@ body {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 6.5rem;
+    z-index: 1;
   }
 }
 .mob-nav-bg .mob-nav__links {
@@ -182,6 +208,7 @@ body {
   background-color: #00474c;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .navbar__burger {
   display: none;

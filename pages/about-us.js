@@ -3,16 +3,20 @@ import Image from 'next/image'
 const AboutUs = () => {
   return (
     <div className='about_us'>
-      <div className='about_us__image'>
-        <Image
-          src='/people_2.jpg'
-          width={2000}
-          height={2200}
-          alt='couple in living room'
-        />
+      <div className='about_us__image-container'>
+        <div className='about_us__image-container--image'>
+          <Image
+            src='/people_2.jpg'
+            alt='couple in living room'
+            layout='fill'
+          />
+        </div>
+        <div className='image-overlay'>
+          <h1>Om oss</h1>
+        </div>
       </div>
       <div className='about_us__text_container'>
-        <div className='about_us__text'>
+        <div className='about_us__text_container--text'>
           <h1>Om oss</h1>
           <p>
             Timotuz har varit verksamt inom fastighetsbranschen sedan 2014.
