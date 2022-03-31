@@ -131,22 +131,87 @@ body {
   }
 }
 
-.embla {
+.index-carousel {
+  position: absolute;
+}
+.index-carousel .embla {
+  position: absolute;
   overflow: hidden;
+  width: 100vw;
+  height: calc(100vh - 6.5rem);
+  top: 6.5rem;
 }
-.embla__container {
+@media only screen and (max-width: 56.25em) {
+  .index-carousel .embla {
+    height: 50vh;
+  }
+}
+.index-carousel .embla__container {
   display: flex;
-  object-Position: "50% 100%";
 }
-.embla__slide {
+.index-carousel .embla__slide {
   position: relative;
   flex: 0 0 100%;
-  width: 100%;
   height: 100vh;
 }
-.embla__slide span > img {
+.index-carousel .embla__slide span > img {
   object-fit: cover;
-  object-Position: "50% 100%";
+  object-position: 50% 100%;
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .index-carousel .embla__slide span > img {
+    object-position: 45% -280px;
+    width: 20%;
+    height: 20%;
+  }
+}
+.index-carousel .embla__overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 7%;
+  top: -100vh;
+  left: 0;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.2);
+  z-index: 2;
+}
+.index-carousel .embla__overlay--title {
+  font-weight: 400;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .index-carousel .embla__overlay--title {
+    font-size: 3rem;
+  }
+}
+.index-carousel .embla__overlay--sub-title {
+  font-weight: 300;
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .index-carousel .embla__overlay--sub-title {
+    font-size: 2rem;
+  }
+}
+.index-carousel .embla__overlay--btn {
+  width: 12.3rem;
+  height: 4rem;
+  background-color: rgba(15, 15, 15, 0.349);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.index-carousel .embla__overlay--btn:hover {
+  background-color: transparent;
+  transition: all 0.2s;
 }
 
 .mob-nav-bg {

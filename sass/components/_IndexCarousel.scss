@@ -1,20 +1,79 @@
-.embla {
-  overflow: hidden;
+.index-carousel {
+  position: absolute;
+  .embla {
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    height: calc(100vh - 6.5rem);
+    top: 6.5rem;
+    @include respond(tab-port) {
+      height: 50vh;
+    }
 
-  &__container {
-    display: flex;
-    object-Position: '50% 100%';
-  }
+    &__container {
+      display: flex;
+    }
 
-  &__slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    height: 100vh;
-    
-    span > img {
-      object-fit: cover;
-      object-Position: '50% 100%';
+    &__slide {
+      position: relative;
+      flex: 0 0 100%;
+      height: 100vh;
+
+      span > img {
+        object-fit: cover;
+        object-position: 50% 100%;
+        height: 100%;
+        width: 100%;
+        @include respond(tab-port) {
+          object-position: 45% -280px;
+          width: 20%;
+          height: 20%;
+        }
+      }
+    }
+    &__overlay {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 7%;
+      top: -100vh;
+      left: 0;
+      height: 100%;
+      background-color: rgba(15, 15, 15, 0.2);
+      z-index: 2;
+
+      &--title {
+        font-weight: 400;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        @include respond(tab-port) {
+          font-size: 3rem;
+        }
+      }
+      &--sub-title {
+        font-weight: 300;
+        font-size: 2.6rem;
+        margin-bottom: 2rem;
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+      }
+
+      &--btn {
+        width: 12.3rem;
+        height: 4rem;
+        background-color: rgba(15, 15, 15, 0.349);
+        border: 2px solid $color-text-light;
+        color: $color-text-light;
+        font-size: 1.5rem;
+        cursor: pointer;
+        &:hover {
+          background-color: transparent;
+          transition: all 0.2s;
+        }
+      }
     }
   }
 }
