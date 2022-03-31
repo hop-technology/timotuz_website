@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className='about-us__image-container'>
         <div className='about-us__image-container--image'>
           <Image
-            src='/people_2.jpg'
+            src='/people_2.webp'
             alt='couple in living room'
             layout='fill'
           />
