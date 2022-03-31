@@ -19,12 +19,12 @@ const MobNav = ({ show, close }) => {
                 </Link>
               </div>
               <div className='mob-nav__links--link'>
-                <Link href='/aboutUs' passHref>
+                <Link href='/about-us' passHref>
                   <a className='mob-nav__links--a' onClick={() => close()}>Om oss</a>
                 </Link>
               </div>
               <div className='mob-nav__links--link'>
-                <Link href='/contactUs' passHref>
+                <Link href='/contact-us' passHref>
                   <a className='mob-nav__links--a' onClick={() => close()}>Kontakt</a>
                 </Link>
               </div>

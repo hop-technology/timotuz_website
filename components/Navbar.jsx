@@ -12,8 +12,8 @@ const Navbar = () => {
   const location = router.asPath
   const homeActive = ['/'].includes(location) ? 'active' : ''
   const propertiesActive = ['/properties'].includes(location) ? 'active' : ''
-  const aboutActive = ['/aboutUs'].includes(location) ? 'active' : ''
-  const contactActive = ['/contactUs'].includes(location) ? 'active' : ''
+  const aboutActive = ['/about-us'].includes(location) ? 'active' : ''
+  const contactActive = ['/contact-us'].includes(location) ? 'active' : ''
 
   return (
     <div className='navbar'>
@@ -53,12 +53,12 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='navbar__links--link'>
-          <Link href='/aboutUs' passHref>
+          <Link href='/about-us' passHref>
             <a className={`navbar__links--a ${aboutActive}`}>Om oss</a>
           </Link>
         </div>
         <div className='navbar__links--link'>
-          <Link href='/contactUs' passHref>
+          <Link href='/contact-us' passHref>
             <a className={`navbar__links--a ${contactActive}`}>Kontakt</a>
           </Link>
         </div>
