@@ -1,10 +1,15 @@
-import HeroSection from "../components/HeroSection"
+import HeroSection from '../components/HeroSection'
 
 const properties = () => {
   return (
-    <div className="properties">
+    <>
       <HeroSection />
-    </div>
+      <div className='properties'>
+        <div>
+          <h1>Properties</h1>
+        </div>
+      </div>
+    </>
   )
 }
 

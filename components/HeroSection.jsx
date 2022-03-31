@@ -6,8 +6,10 @@ const HeroSection = () => {
       <div className='hero_section__text'>
         <h1>Fastigheter med hög standard i centrala lägen</h1>
       </div>
-      <div className='hero_section__image'>
-        <Image src='/fastigheter_hero.jpg' width={4000} height={1600} />
+      <div className='hero_section__image_container'>
+        <div className='hero_section__image_container--image'>
+          <Image src='/fastigheter_hero.jpg' layout='fill' />
+        </div>
       </div>
     </div>
   )
