@@ -1,4 +1,5 @@
 import HeroSection from '../components/HeroSection'
+import PropertiesCards from '../components/PropertiesCards'
 
 const properties = () => {
   return (
@@ -6,7 +7,7 @@ const properties = () => {
       <HeroSection />
       <div className='properties'>
         <div>
-          <h1>Properties</h1>
+          <PropertiesCards />
         </div>
       </div>
     </>
