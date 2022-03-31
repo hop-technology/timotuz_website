@@ -6,9 +6,7 @@ const properties = () => {
     <>
       <HeroSection />
       <div className='properties'>
-        <div>
-          <PropertiesCards />
-        </div>
+        <PropertiesCards />
       </div>
     </>
   )

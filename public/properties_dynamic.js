@@ -1,7 +1,5 @@
-import Image from 'next/image'
-
-/* import PågåendeYstad1 from '../public/01.jpg';
-import PågåendeYstad2 from '../public/03.jpg'; */
+import PågåendeYstad1 from '../public/aurora_01.jpg';
+import PågåendeYstad2 from '../public/aurora_02.jpg';
 /*
 import Ystad1 from '../../assets/images/Ystad/1.jpg'
 import Ystad2 from '../../assets/images/Ystad/2.jpg'
@@ -25,8 +23,16 @@ const properties_dynamic = [
     housing: '19st',
     boa: '1500 kvm',
     images: [
-      <Image src='/aurora_01.jpg' width={300} height={300} />,
-      <Image src='/aurora_02.jpg' width={300} height={300} />,
+      {
+        id: 1,
+        photo: PågåendeYstad1,
+        alt: '',
+      },
+      {
+        id: 2,
+        photo: PågåendeYstad2,
+        alt: '',
+      },
     ],
   },
   {
@@ -44,7 +50,7 @@ const properties_dynamic = [
     parking: 'Parkeringsplats (16st)',
     foradling:
       'Lokalerna på innegården kommer rivas och ombildas till ca 30-35 bostäder med levande innergårdar.',
-    /*     images: [
+/*     images: [
       {
         id: 1,
         photo: Ystad1,
@@ -82,7 +88,7 @@ const properties_dynamic = [
     parking: 'Underjordiskt garage (17st)',
     standard:
       'Fastigheten håller en hög teknisk standard. Lägenheter har under åren succesivt totalrenoverats med bruksvärdeshöjande uppgraderingar.',
-    /*     images: [
+/*     images: [
       {
         id: 1,
         photo: Limhamn1,
@@ -115,7 +121,7 @@ const properties_dynamic = [
     type: 'Industrilokal',
     lager: '480 kvm',
     kontor: '120 kvm',
-    /*   images: [
+  /*   images: [
       {
         id: 1,
         photo: Helsingborg1,
