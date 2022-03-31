@@ -1,15 +1,15 @@
-import PågåendeYstad1 from '../public/aurora_01.jpg';
-import PågåendeYstad2 from '../public/aurora_02.jpg';
-/*
-import Ystad1 from '../../assets/images/Ystad/1.jpg'
-import Ystad2 from '../../assets/images/Ystad/2.jpg'
-import Ystad3 from '../../assets/images/Ystad/3.jpg'
-import Ystad4 from '../../assets/images/Ystad/4.JPG'
-import Limhamn1 from '../../assets/images/Limhamn/1.JPG'
-import Limhamn2 from '../../assets/images/Limhamn/2.JPG'
-import Limhamn3 from '../../assets/images/Limhamn/3.jpg'
-import Limhamn4 from '../../assets/images/Limhamn/4.jpg'
-import Helsingborg1 from '../../assets/images/Helsingborg/1.jpg' */
+import PågåendeYstad1 from '../public/aurora_01.jpg'
+import PågåendeYstad2 from '../public/aurora_02.jpg'
+
+import Ystad1 from '../public/ystad_1.jpg'
+import Ystad2 from '../public/ystad_2.jpg'
+import Ystad3 from '../public/ystad_3.jpg'
+import Ystad4 from '../public/ystad_4.jpg'
+import Limhamn1 from '../public/limhamn_1.jpg'
+import Limhamn2 from '../public/limhamn_2.jpg'
+import Limhamn3 from '../public/limhamn_3.jpg'
+import Limhamn4 from '../public/limhamn_4.jpg'
+import Helsingborg1 from '../public/helsingborg_1.jpg'
 
 const properties_dynamic = [
   {
@@ -50,7 +50,7 @@ const properties_dynamic = [
     parking: 'Parkeringsplats (16st)',
     foradling:
       'Lokalerna på innegården kommer rivas och ombildas till ca 30-35 bostäder med levande innergårdar.',
-/*     images: [
+    images: [
       {
         id: 1,
         photo: Ystad1,
@@ -71,7 +71,7 @@ const properties_dynamic = [
         photo: Ystad4,
         alt: '',
       },
-    ], */
+    ],
   },
   {
     id: 3,
@@ -88,7 +88,7 @@ const properties_dynamic = [
     parking: 'Underjordiskt garage (17st)',
     standard:
       'Fastigheten håller en hög teknisk standard. Lägenheter har under åren succesivt totalrenoverats med bruksvärdeshöjande uppgraderingar.',
-/*     images: [
+    images: [
       {
         id: 1,
         photo: Limhamn1,
@@ -109,7 +109,7 @@ const properties_dynamic = [
         photo: Limhamn4,
         alt: '',
       },
-    ], */
+    ],
   },
   {
     id: 4,
@@ -121,13 +121,13 @@ const properties_dynamic = [
     type: 'Industrilokal',
     lager: '480 kvm',
     kontor: '120 kvm',
-  /*   images: [
+    images: [
       {
         id: 1,
         photo: Helsingborg1,
         alt: '',
       },
-    ], */
+    ],
   },
 ]
 

@@ -4,9 +4,9 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { DotButton, PrevButton, NextButton } from './SlideshowButton'
 
 const PropertiesSlider = ({ image }) => {
-  const [emblaRef, emblaApi, embla] = useEmblaCarousel({ loop: true })
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false)
+  const [emblaRef, embla] = useEmblaCarousel({ loop: true })
+  const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
+  const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState([])
 
@@ -30,12 +30,6 @@ const PropertiesSlider = ({ image }) => {
     setScrollSnaps(embla.scrollSnapList())
     embla.on('select', onSelect)
   }, [embla, setScrollSnaps, onSelect])
-
-  useEffect(() => {
-    if (emblaApi) {
-      // Embla API is ready
-    }
-  }, [emblaApi])
 
   let slideShow = image?.map((image, index) => {
     return (
