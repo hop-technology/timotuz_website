@@ -3,6 +3,7 @@
 
   &__container {
     display: flex;
+    object-Position: '50% 100%';
   }
 
   &__slide {
@@ -13,7 +14,7 @@
     
     span > img {
       object-fit: cover;
-      object-Position: '100% -50%';
+      object-Position: '50% 100%';
     }
   }
 }
