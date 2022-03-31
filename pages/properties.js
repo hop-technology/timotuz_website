@@ -1,7 +1,9 @@
+import HeroSection from "../components/HeroSection"
+
 const properties = () => {
   return (
-    <div>
-      <h1>Properties</h1>
+    <div className="properties">
+      <HeroSection />
     </div>
   )
 }
