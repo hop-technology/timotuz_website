@@ -1,74 +1,96 @@
 .index-carousel {
-  position: absolute;
-  .embla {
-    position: absolute;
-    overflow: hidden;
-    width: 100vw;
-    height: calc(100vh - 6.5rem);
-    top: 6.5rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  position: relative;
+
+  &__large {
     @include respond(tab-port) {
-      height: 50vh;
+      display: none;
     }
+  }
 
-    &__container {
-      display: flex;
+  &__small {
+    display: none;
+    @include respond(tab-port) {
+      display: contents;
     }
+  }
 
-    &__slide {
-      position: relative;
-      flex: 0 0 100%;
-      height: 100vh;
+  .image-container {
+    width: 100%;
+    height: 100%;
+    animation: slide 15s ease-in-out 2s infinite alternate;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+  }
 
-      span > img {
-        object-fit: cover;
-        object-position: 50% 100%;
-        height: 100%;
-        width: 100%;
-        @include respond(tab-port) {
-          object-position: 45% -280px;
-          width: 20%;
-          height: 20%;
-        }
-      }
-    }
-    &__overlay {
-      position: relative;
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(15, 15, 15, 0.3);
+    width: 100%;
+    height: 100%;
+
+    &--content {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding-left: 7%;
-      top: -100vh;
-      left: 0;
       height: 100%;
-      background-color: rgba(15, 15, 15, 0.2);
-      z-index: 2;
+      padding-left: 6%;
+      @include respond(phone-L) {
+        margin-top: 2rem;
+      }
 
-      &--title {
-        font-weight: 400;
+      .title {
         font-size: 4rem;
-        margin-bottom: 1rem;
+        font-weight: 400;
+        margin-bottom: 1.3rem;
+        color: $color-text-light;
         @include respond(tab-port) {
           font-size: 3rem;
         }
-      }
-      &--sub-title {
-        font-weight: 300;
-        font-size: 2.6rem;
-        margin-bottom: 2rem;
-        @include respond(tab-port) {
-          font-size: 2rem;
+        @include respond(phone-L) {
+          font-size: 1.8rem;
+          margin-bottom: 0.6rem;
         }
       }
 
-      &--btn {
+      .sub-title {
+        font-size: 2.66rem;
+        font-weight: 300;
+        margin-bottom: 2.2rem;
+        color: $color-text-light;
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+        @include respond(phone-L) {
+          font-size: 1.2rem;
+          margin-bottom: 1rem;
+        }
+      }
+
+      .btn {
         width: 12.3rem;
         height: 4rem;
         background-color: rgba(15, 15, 15, 0.349);
         border: 2px solid $color-text-light;
         color: $color-text-light;
         font-size: 1.5rem;
+        font-weight: 300;
+        font-family: 'Open Sans', sans-serif;
         cursor: pointer;
+
+        @include respond(phone-L) {
+          width: 10rem;
+          height: 3rem;
+          border: 1px solid $color-text-light;
+          font-size: 1rem;
+          font-weight: 300;
+        }
         &:hover {
           background-color: transparent;
           transition: all 0.2s;
