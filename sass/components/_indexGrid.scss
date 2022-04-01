@@ -2,10 +2,8 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  // height: 100%;
 
   .index-grid {
-    // border: 2px solid #000;
     display: grid;
     height: 100%;
     margin: 10rem 0;
@@ -16,8 +14,21 @@
     grid-template-columns: repeat(3, 28.9rem);
     gap: 6.5rem 5.4rem;
     justify-content: center;
+    @include respond(tab-port) {
+      grid-template-areas:
+        'a'
+        'd'
+        'b'
+        'c'
+        'e';
+      grid-template-rows: max-content;
+      grid-template-columns: 50vw;
+    }
+    @include respond(phone-L) {
+      grid-template-columns: 70vw;
+    }
 
-// =========== Kontakt ===========
+    // =========== Kontakt ===========
 
     .kontakt {
       position: relative;
@@ -57,7 +68,7 @@
       }
     }
 
-// =========== Aurora ===========
+    // =========== Aurora ===========
 
     .aurora {
       position: relative;
@@ -90,7 +101,7 @@
       }
     }
 
-// =========== Ystad ===========
+    // =========== Ystad ===========
 
     .ystad {
       position: relative;
@@ -118,7 +129,7 @@
       }
     }
 
-// =========== Malmö ===========
+    // =========== Malmö ===========
 
     .malmo {
       position: relative;
@@ -145,13 +156,19 @@
         }
       }
     }
-    
-// =========== Fastigheter ===========
+
+    // =========== Fastigheter ===========
 
     .fastigheter {
       position: relative;
       background-color: $color-primary;
       grid-area: e;
+      @include respond(tab-port) {
+        height: 35.9vw;
+      }
+      @include respond(phone-L) {
+        height: 50.1vw;
+      }
 
       &__content {
         position: absolute;

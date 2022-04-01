@@ -60,7 +60,7 @@ const IndexGrid = () => {
         </div>
         <div className='fastigheter'>
           <div className='fastigheter__content'>
-            <Link href='/fastigheter' passHref>
+            <Link href='/properties' passHref>
               <button className='btn'>Visa flera fastigheter</button>
             </Link>
           </div>

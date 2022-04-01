@@ -261,6 +261,18 @@ body {
   gap: 6.5rem 5.4rem;
   justify-content: center;
 }
+@media only screen and (max-width: 56.25em) {
+  .grid-container .index-grid {
+    grid-template-areas: "a" "d" "b" "c" "e";
+    grid-template-rows: max-content;
+    grid-template-columns: 50vw;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .grid-container .index-grid {
+    grid-template-columns: 70vw;
+  }
+}
 .grid-container .index-grid .kontakt {
   position: relative;
   grid-area: a;
@@ -372,6 +384,16 @@ body {
   position: relative;
   background-color: #00474c;
   grid-area: e;
+}
+@media only screen and (max-width: 56.25em) {
+  .grid-container .index-grid .fastigheter {
+    height: 35.9vw;
+  }
+}
+@media only screen and (max-width: 32.75em) {
+  .grid-container .index-grid .fastigheter {
+    height: 50.1vw;
+  }
 }
 .grid-container .index-grid .fastigheter__content {
   position: absolute;
