@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import IndexCarousel from '../components/IndexCarousel'
 import IndexGrid from '../components/IndexGrid'
+import IndexAboutUs from '../components/IndexAboutUs'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       </Head>
       <IndexCarousel />
       <IndexGrid />
+      <IndexAboutUs />
     </>
   )
 }
