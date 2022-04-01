@@ -20,20 +20,83 @@ const PropertiesCards = () => {
               <p>{property.description}</p>
             </div>
             <div className='properties-cards__info'>
-              <h4>Adress:</h4>
-              <p>{property.address}</p>
+              <p>
+                <b>Adress: </b>
+                {property.address}
+              </p>
             </div>
-            {property.type}
+            <p>
+              <b>Typ: </b>
+              {property.type}
+            </p>
+            {property.housing ? (
+              <p>
+                <b>Bostäder: </b>
+                {property.housing}
+              </p>
+            ) : (
+              ''
+            )}
+            {property.boa ? (
+              <p>
+                <b>Boa: </b>
+                {property.boa}
+              </p>
+            ) : (
+              ''
+            )}
+
+            {property.premises ? (
+              <p>
+                <b>Lokaler: </b>
+                {property.premises}
+              </p>
+            ) : (
+              ''
+            )}
+
+            {property.loa ? (
+              <p>
+                <b>LOA: </b>
+                {property.loa}
+              </p>
+            ) : (
+              ''
+            )}
+
+            {property.lager ? (
+              <p>
+                <b>Lager: </b>
+                {property.lager}
+              </p>
+            ) : (
+              ''
+            )}
+            {property.kontor ? (
+              <p>
+                <b>Kontor: </b>
+                {property.kontor}
+              </p>
+            ) : (
+              ''
+            )}
+            {property.parking ? (
+              <p>
+                <b>Parkering: </b>
+                {property.parking}
+              </p>
+            ) : (
+              ''
+            )}
             <br />
-            {property.housing}
-            <br />
-            {property.boa} {property.premises ? property.premises : ''}
-            <br />
-            {property.loa ? property.loa : ''}
-            <br />
-            {property.parking ? property.parking : ''}
-            <br />
-            {property.foradling ? property.foradling : ''}
+            {property.foradling ? (
+              <p>
+                <b>Förädling/exploatering: </b>
+                {property.foradling}
+              </p>
+            ) : (
+              ''
+            )}
           </div>
         </div>
       </>

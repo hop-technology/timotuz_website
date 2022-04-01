@@ -261,6 +261,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  flex: 0 0 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .embla {
+    max-width: 100%;
+  }
 }
 .embla__viewport {
   width: 100%;
@@ -278,7 +284,7 @@ body {
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -webkit-tap-highlight-color: transparent;
-  margin-left: -10px;
+  margin-left: -1rem;
 }
 .embla__slide {
   position: relative;
@@ -288,7 +294,7 @@ body {
 .embla__slide__inner {
   position: relative;
   overflow: hidden;
-  height: 190px;
+  height: 19rem;
 }
 .embla__slide__img {
   position: absolute;
@@ -327,16 +333,25 @@ body {
   height: 100%;
 }
 .embla__button--prev {
-  left: 27px;
+  left: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .embla__button--prev {
+    left: 1rem;
+  }
 }
 .embla__button--next {
-  right: 27px;
+  right: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .embla__button--next {
+    right: 1rem;
+  }
 }
 .embla__dots {
   display: flex;
   list-style: none;
   justify-content: center;
-  padding-top: 10px;
 }
 .embla__dot {
   background-color: transparent;
@@ -345,8 +360,8 @@ body {
   padding: 0;
   outline: 0;
   border: 0;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   margin-right: 7.5px;
   margin-left: 7.5px;
   display: flex;
@@ -364,36 +379,84 @@ body {
   opacity: 1;
 }
 
-.properties__container {
+.properties {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .properties-cards {
   width: 100%;
+  margin-top: 10rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties-cards {
+    flex-direction: column;
+    margin-top: 0;
+  }
 }
 .properties-cards__image-slider {
   width: 50%;
-  margin-left: 20rem;
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__image-slider {
+    width: 100%;
+    margin-top: 5rem;
+    margin-left: 0;
+  }
 }
 .properties-cards__text {
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-right: 10rem;
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__text {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 .properties-cards__text h2 {
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__text h2 {
+    margin: 2rem;
+  }
+}
 .properties-cards__text h3 {
-  margin-top: 10rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
+  text-decoration: underline;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__text h3 {
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
 }
 .properties-cards__text p {
-  margin-right: 15rem;
+  margin-right: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__text p {
+    margin: 2rem;
+  }
+}
+.properties-cards__info {
+  margin-top: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

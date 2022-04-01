@@ -34,7 +34,7 @@ const PropertiesSlider = ({ image }) => {
   let slideShow = image?.map((image, index) => {
     return (
       <div className='embla__slide'>
-        <Image src={image.photo.src} width={600} height={600} />
+        <Image src={image.photo.src} width={2000} height={1500} />
       </div>
     )
   })

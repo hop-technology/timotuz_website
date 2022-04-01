@@ -14,11 +14,15 @@
 .embla {
   position: relative;
   background-color: #f7f7f7;
-  //padding: 20px;
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+  flex: 0 0 100%;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
 
   &__viewport {
     width: 100%;
@@ -39,7 +43,7 @@
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    margin-left: -10px;
+    margin-left: -1rem;
   }
 
   &__slide {
@@ -51,7 +55,7 @@
   &__slide__inner {
     position: relative;
     overflow: hidden;
-    height: 190px;
+    height: 19rem;
   }
 
   &__slide__img {
@@ -82,6 +86,8 @@
     align-items: center;
     fill: #1bcacd;
     padding: 0;
+
+  
   }
 
   &__button:disabled {
@@ -95,18 +101,25 @@
   }
 
   &__button--prev {
-    left: 27px;
+    left: 2rem;
+
+    @include respond(tab-port) {
+      left: 1rem;
+    }
   }
 
   &__button--next {
-    right: 27px;
+    right: 2rem;
+
+    @include respond(tab-port) {
+      right: 1rem;
+    }
   }
 
   &__dots {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-top: 10px;
   }
 
   &__dot {
@@ -116,8 +129,8 @@
     padding: 0;
     outline: 0;
     border: 0;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     margin-right: 7.5px;
     margin-left: 7.5px;
     display: flex;
