@@ -33,7 +33,7 @@ const PropertiesSlider = ({ image }) => {
 
   let slideShow = image?.map((image, index) => {
     return (
-      <div className='embla__slide'>
+      <div className='embla__slide' key={index}>
         <Image
           src={image.photo.src}
           width={2000}
@@ -45,7 +45,7 @@ const PropertiesSlider = ({ image }) => {
   })
 
   return (
-    <div className='embla' ref={emblaRef}>
+    <div className='embla' ref={emblaRef} >
       <div className='embla__container'>{slideShow}</div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
