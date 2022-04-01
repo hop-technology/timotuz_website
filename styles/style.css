@@ -250,18 +250,6 @@ body {
   border-bottom: 2px solid #fff;
 }
 
-/* .embla {
-    overflow: hidden;
-
-    &__container {
-        display: flex;
-    }
-
-    &__slide {
-        position: relative;
-        flex: 0 0 100%;
-    }
-} */
 .embla {
   position: relative;
   background-color: #f7f7f7;
@@ -426,6 +414,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
+  margin-top: 5rem;
   margin-right: 10rem;
   margin-left: 5rem;
   color: #0f0f0f;

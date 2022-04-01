@@ -1,16 +1,3 @@
-/* .embla {
-    overflow: hidden;
-
-    &__container {
-        display: flex;
-    }
-
-    &__slide {
-        position: relative;
-        flex: 0 0 100%;
-    }
-} */
-
 .embla {
   position: relative;
   background-color: #f7f7f7;
@@ -86,8 +73,6 @@
     align-items: center;
     fill: #1bcacd;
     padding: 0;
-
-  
   }
 
   &__button:disabled {
