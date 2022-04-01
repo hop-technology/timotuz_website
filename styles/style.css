@@ -444,6 +444,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text h2 {
     margin: 0rem;
+    margin-bottom: 2rem;
   }
 }
 .properties-cards__text h3 {
@@ -463,6 +464,19 @@ body {
   .properties-cards__text p {
     margin: 0rem;
   }
+}
+.properties-cards__text button {
+  margin-top: 3rem;
+  height: 4rem;
+  width: 15rem;
+  background-color: #00474c;
+  color: #ffffff;
+}
+.properties-cards__text button a {
+  color: inherit;
+}
+.properties-cards__text button p {
+  margin: 0;
 }
 .properties-cards__info {
   margin-top: 2rem;

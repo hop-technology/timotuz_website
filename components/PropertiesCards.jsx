@@ -61,6 +61,17 @@ const PropertiesCards = () => {
             ) : (
               ''
             )}
+            {property.button ? (
+              <p>
+                <button>
+                  <a href='https://www.brfaurora.nu' target='_blank'>
+                    <p>{property.button}</p>
+                  </a>
+                </button>
+              </p>
+            ) : (
+              ''
+            )}
 
             {property.premises ? (
               <p>

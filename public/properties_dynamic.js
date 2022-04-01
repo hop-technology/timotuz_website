@@ -31,6 +31,7 @@ const properties_dynamic = [
     type: 'Bostäder',
     housing: '19st',
     boa: '1500 kvm',
+    button: 'Intresseanmälan',
     images: [
       {
         id: 1,
@@ -58,7 +59,7 @@ const properties_dynamic = [
     loa: '1155 kvm',
     parking: 'Parkeringsplats (16st)',
     foradling:
-      'Lokalerna på innegården kommer rivas och ombildas till ca 30-35 bostäder med levande innergårdar.',
+      'Lokalerna på innegården kommer rivas och ombildas till 19 bostäder och en levande innergård.',
     images: [
       {
         id: 1,
@@ -87,7 +88,7 @@ const properties_dynamic = [
     district: 'Malmö / Limhamn',
     name: 'Strutsen 25',
     description:
-      'Fastigheten är belägen på centrala läge i de pittoreska “gamla” delarna av Limhamn på en lugn återvändsgata ett par minuters promenadavstånd från havet och ett stenkast från Limhamns centrum med restauranger, matbutiker och caféer.',
+      'Fastigheten är belägen på centralt läge i de pittoreska “gamla” delarna av Limhamn på en lugn återvändsgata ett par minuters promenadavstånd från havet och ett stenkast från Limhamns centrum med restauranger, matbutiker och caféer.',
     address: 'Västra Bernadottesgatan 30, Limhamn ',
     type: 'Bostäder',
     housing: '13',
