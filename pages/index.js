@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import IndexCarousel from '../components/IndexCarousel'
+import IndexGrid from '../components/IndexGrid'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <IndexCarousel />
+      <IndexGrid />
     </>
   )
 }
