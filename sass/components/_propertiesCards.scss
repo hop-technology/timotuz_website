@@ -32,13 +32,15 @@
     @include respond(tab-port) {
       width: 100%;
       margin-right: 0;
+      margin-left: 0;
+      width: 85%;
     }
 
     h2 {
       margin-bottom: 2rem;
 
       @include respond(tab-port) {
-        margin: 2rem;
+        margin: 0rem;
       }
     }
 
@@ -49,8 +51,6 @@
 
       @include respond(tab-port) {
         margin-top: 5rem;
-        margin-left: 2rem;
-        margin-bottom: 1rem;
       }
     }
 
@@ -58,7 +58,7 @@
       margin-right: 5rem;
 
       @include respond(tab-port) {
-        margin: 2rem;
+        margin: 0rem;
       }
     }
   }

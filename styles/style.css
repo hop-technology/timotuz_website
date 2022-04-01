@@ -434,6 +434,8 @@ body {
   .properties-cards__text {
     width: 100%;
     margin-right: 0;
+    margin-left: 0;
+    width: 85%;
   }
 }
 .properties-cards__text h2 {
@@ -441,7 +443,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text h2 {
-    margin: 2rem;
+    margin: 0rem;
   }
 }
 .properties-cards__text h3 {
@@ -452,8 +454,6 @@ body {
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text h3 {
     margin-top: 5rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
   }
 }
 .properties-cards__text p {
@@ -461,7 +461,7 @@ body {
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text p {
-    margin: 2rem;
+    margin: 0rem;
   }
 }
 .properties-cards__info {

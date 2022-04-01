@@ -17,7 +17,23 @@ const PropertiesCards = () => {
               <h2>{property.name}</h2>
             </div>
             <div>
-              <p>{property.description}</p>
+              <p>
+                {property.description
+                  ? property.description
+                  : property.description_text?.map((text, index) => {
+                      return (
+                        <>
+                          <p>{text.description_1}</p>
+                          <br />
+                          <p>{text.description_2}</p>
+                          <br />
+                          <p>{text.description_3}</p>
+                          <br />
+                          <p>{text.description_4}</p>
+                        </>
+                      )
+                    })}
+              </p>
             </div>
             <div className='properties-cards__info'>
               <p>
