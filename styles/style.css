@@ -186,8 +186,8 @@ body {
   }
 }
 .index-about-us__image-container .image-overlay h1 {
-  font-weight: 400;
-  font-size: 6.4rem;
+  font-weight: 300;
+  font-size: 5.4rem;
 }
 .index-about-us__text-container {
   display: flex;
@@ -199,12 +199,23 @@ body {
 @media only screen and (max-width: 56.25em) {
   .index-about-us__text-container {
     width: 100%;
+    background-color: #00474c;
+    padding: 3rem 10%;
+    align-items: center;
   }
 }
 .index-about-us__text-container--text {
   margin: 0 10%;
   font-weight: 300;
   font-size: 1.5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .index-about-us__text-container--text {
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .index-about-us__text-container--text h1 {
   padding-bottom: 2rem;
@@ -227,6 +238,11 @@ body {
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
   margin-top: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .index-about-us__text-container--text .btn {
+    margin-bottom: 5rem;
+  }
 }
 .index-about-us__text-container--text .btn:hover {
   background-color: transparent;
