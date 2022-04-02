@@ -53,6 +53,7 @@ html {
 body {
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #fafafa;
 }
 
 body {
@@ -252,7 +253,7 @@ body {
 
 .embla {
   position: relative;
-  background-color: #f7f7f7;
+  background-color: #fafafa;
   max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
@@ -369,14 +370,14 @@ body {
   align-items: center;
 }
 .embla__dot:after {
-  background-color: #00474c;
+  background-color: #9b9b9b;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   content: "";
 }
 .embla__dot.is-selected:after {
-  background-color: #e1252a;
+  background-color: #00474c;
   opacity: 1;
 }
 
@@ -392,44 +393,44 @@ body {
 }
 
 .properties-cards {
-  width: 100%;
-  margin: 5rem 0;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  width: fit-content;
+  padding: 5% 5%;
+  margin: 1rem 5%;
+}
+.properties-cards:nth-child(2n) {
+  border: 2px solid #00474c;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards {
     flex-direction: column;
-    margin-top: 0;
+    padding: 5% 5%;
   }
 }
 .properties-cards__image-slider {
   width: 50%;
-  margin-left: 5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__image-slider {
     width: 100%;
-    margin-top: 5rem;
-    margin-left: 0;
   }
 }
 .properties-cards__text {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-top: 0rem;
-  margin-right: 10rem;
-  margin-left: 5rem;
   color: #0f0f0f;
+  margin-left: 5%;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text {
     width: 100%;
     margin-right: 0;
     margin-left: 0;
-    width: 85%;
+    width: 100%;
+    font-size: 1.9rem;
   }
 }
 .properties-cards__text h2 {
@@ -450,27 +451,39 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
 }
+@media only screen and (max-width: 56.25em) {
+  .properties-cards__text h3 {
+    margin-top: 4rem;
+  }
+}
 .properties-cards__text p {
-  margin-right: 5rem;
   font-size: 1.5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text p {
+    font-size: 1.9rem;
     margin: 0rem;
   }
 }
 .properties-cards__text button {
+  display: flex;
+  align-items: center;
   margin-top: 3rem;
   height: 4rem;
-  width: 15rem;
+  width: fit-content;
   background-color: #00474c;
   color: #ffffff;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 2.5rem;
+}
+.properties-cards__text button:hover {
+  background-color: #006168;
 }
 .properties-cards__text button a {
   color: inherit;
-}
-.properties-cards__text button p {
-  margin: 0;
+  text-decoration: none;
+  letter-spacing: 1px;
 }
 .properties-cards__info {
   margin-top: 2rem;

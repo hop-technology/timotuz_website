@@ -20,7 +20,7 @@ const PropertiesCards = () => {
               ? property.description
               : property.description_text?.map((text, index) => {
                   return (
-                    <div key={index} >
+                    <div key={index}>
                       <p>{text.description_1}</p>
                       <br />
                       <p>{text.description_2}</p>
@@ -63,8 +63,7 @@ const PropertiesCards = () => {
               <a
                 href='https://www.brfaurora.nu'
                 target='_blank'
-                rel='noreferrer'
-              >
+                rel='noreferrer'>
                 <p>{property.button}</p>
               </a>
             </button>
