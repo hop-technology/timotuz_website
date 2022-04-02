@@ -306,19 +306,24 @@ body {
 .embla__button {
   outline: 0;
   cursor: pointer;
-  background-color: transparent;
+  background-color: #00474c;
+  border-radius: 50%;
   touch-action: manipulation;
   position: absolute;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
   border: 0;
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.8rem;
   justify-content: center;
   align-items: center;
-  fill: #1bcacd;
-  padding: 0;
+  fill: #ffffff;
+  opacity: 0.7;
+}
+.embla__button:hover {
+  opacity: 1;
 }
 .embla__button:disabled {
   cursor: default;
@@ -364,14 +369,14 @@ body {
   align-items: center;
 }
 .embla__dot:after {
-  background-color: #efefef;
+  background-color: #00474c;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   content: "";
 }
 .embla__dot.is-selected:after {
-  background-color: #1bcacd;
+  background-color: #e1252a;
   opacity: 1;
 }
 
@@ -388,10 +393,10 @@ body {
 
 .properties-cards {
   width: 100%;
-  margin-top: 10rem;
+  margin: 5rem 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards {
@@ -414,7 +419,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 50%;
-  margin-top: 5rem;
+  margin-top: 0rem;
   margin-right: 10rem;
   margin-left: 5rem;
   color: #0f0f0f;
@@ -429,6 +434,7 @@ body {
 }
 .properties-cards__text h2 {
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text h2 {
@@ -437,17 +443,16 @@ body {
   }
 }
 .properties-cards__text h3 {
-  margin-top: 1rem;
-  margin-bottom: 3rem;
-  text-decoration: underline;
-}
-@media only screen and (max-width: 56.25em) {
-  .properties-cards__text h3 {
-    margin-top: 5rem;
-  }
+  margin-bottom: 2rem;
+  padding-bottom: 0.4rem;
+  width: fit-content;
+  border-bottom: 2px solid #000;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 .properties-cards__text p {
   margin-right: 5rem;
+  font-size: 1.5rem;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__text p {
