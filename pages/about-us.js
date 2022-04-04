@@ -9,6 +9,7 @@ const AboutUs = () => {
             src='/people_2.webp'
             alt='couple in living room'
             layout='fill'
+            priority
           />
         </div>
         <div className='image-overlay'>
