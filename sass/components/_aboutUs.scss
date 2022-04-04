@@ -6,6 +6,11 @@
 
   @include respond(tab-port) {
     flex-direction: column;
+ 
+  }
+  @include respond(phone-M) {
+    flex-direction: column;
+    height: 130vh;
   }
 
   &__image-container {
