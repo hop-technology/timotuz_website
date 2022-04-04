@@ -1,7 +1,7 @@
 .hero-section {
   &__image-container {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 
     &--image {
       position: relative;
@@ -20,7 +20,7 @@
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     z-index: 1;
     background-color: #00474c56;
     @include respond(phone-L) {
@@ -52,7 +52,7 @@
     border-radius: 50%;
     width: 30rem;
     height: 30rem;
-    top: 20%;
+    top: 13%;
     left: 10%;
     z-index: 1;
     padding: 5rem;
