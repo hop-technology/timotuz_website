@@ -8,7 +8,7 @@ const Footer = () => {
           <Image
             src='/logo-with-text.svg'
             height={100}
-            width={300}
+            width={250}
             alt='Timotuz logo'
           />
         </div>
