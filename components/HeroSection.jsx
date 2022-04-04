@@ -9,11 +9,10 @@ const HeroSection = ({ image, alt, text }) => {
         </div>
       ) : (
         <div className='hero-section__contact-us'>
-          <div>
+          <div className='hero-section__contact-us--item'>
             <h2>{text[0].number}</h2>
           </div>
-          <span></span>
-          <div>
+          <div className='hero-section__contact-us--item'>
             <h2>{text[0].email}</h2>
           </div>
         </div>
