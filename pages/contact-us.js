@@ -18,7 +18,7 @@ const contactUs = () => {
         text={contact_text}
       />
       <div className='contact-us__text-container'>
-        <div className='contact-us__text-one'>
+        <div className='contact-us__text-container--text'>
           <h2>Felanmälan: Malmö/Limhamn</h2>
           <h3>Fastighetsskötsel och felanmälan</h3>
           <p>
@@ -36,7 +36,7 @@ const contactUs = () => {
             telefon 040 93 12 70.
           </p>
         </div>
-        <div className='contact-us__text-two'>
+        <div className='contact-us__text-container--text'>
           <h2>Felanmälan: Ystad</h2>
           <h3>Fastighetsskötsel och felanmälan</h3>
           <p>

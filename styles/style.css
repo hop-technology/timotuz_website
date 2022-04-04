@@ -1150,23 +1150,33 @@ body {
 .contact-us__text-container {
   display: flex;
   flex-direction: column;
-  width: 66%;
-  margin-left: 30rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 7rem;
 }
-.contact-us__text-container h2 {
+.contact-us__text-container--text {
+  width: 60%;
+  margin-top: 10rem;
   margin-bottom: 3rem;
 }
-.contact-us__text-container h3 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+@media only screen and (max-width: 32.75em) {
+  .contact-us__text-container--text {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
 }
-.contact-us__text-one {
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+.contact-us__text-container--text h2 {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 2.8rem;
 }
-.contact-us__text-two {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+.contact-us__text-container--text h3 {
+  margin: 4rem 0 1rem 0;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.contact-us__text-container--text p {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
