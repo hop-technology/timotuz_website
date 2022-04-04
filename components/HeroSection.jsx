@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const HeroSection = () => {
+const HeroSection = ({image, alt}) => {
   return (
     <div className='hero-section'>
       <div className='hero-section__text'>
@@ -8,7 +8,7 @@ const HeroSection = () => {
       </div>
       <div className='hero-section__image-container'>
         <div className='hero-section__image-container--image'>
-          <Image src='/fastigheter-hero-1920.webp' layout='fill' alt='Birdseye view of property in Ystad' />
+          <Image src={image} layout='fill' alt={alt} />
         </div>
       </div>
     </div>
