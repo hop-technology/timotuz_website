@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import HeroSection from '../components/HeroSection'
 import PropertiesCards from '../components/PropertiesCards'
 import fastigheter_hero from '../public/fastigheter-hero-1920.webp'
@@ -11,7 +12,7 @@ const properties = () => {
   return (
     <>
       <Head>
-        <title>Fastigheter | {site_name}</title>
+        <title>Fastigheter | Timotuz Fastigheter</title>
         <meta
           name='description'
           content='Fastigheter med hög standard i centrala lägen'
