@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
             'Vi förvärvar, förädlar, nyproducerar, exploaterar, äger och förvaltar hyresbostäder i Södra Sverige.',
           images: [
             {
-              url: 'https://timotuz.se/static/images/logo.png',
+              url: 'public\aurora-court.webp',
               width: 1200,
               height: 630,
               alt: 'Timotuz Fastigheter',
