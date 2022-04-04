@@ -76,6 +76,20 @@ body {
 .hero-section__image-container--image span > img {
   object-fit: cover;
 }
+.hero-section__contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 60%;
+  z-index: 1;
+  top: 50%;
+}
+.hero-section__contact-us span {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  height: 8rem;
+}
 .hero-section__text {
   display: flex;
   justify-content: center;

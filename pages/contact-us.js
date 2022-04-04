@@ -2,18 +2,29 @@ import HeroSection from '../components/HeroSection'
 import kontakta_oss from '../public/kontakta-oss.webp'
 
 const contactUs = () => {
+  const contact_text = [
+    {
+      id: 1,
+      number: '040 685 94 00',
+      email: 'info@timotuz.com',
+    },
+  ]
+
   return (
     <div className='contact-us'>
       <HeroSection
         image={kontakta_oss}
         alt={'Friends sitting on bed with dogs'}
+        text={contact_text}
       />
       <div className='contact-us__text-container'>
         <div className='contact-us__text-one'>
           <h2>Felanmälan: Malmö/Limhamn</h2>
           <h3>Fastighetsskötsel och felanmälan</h3>
           <p>
-            Fastighetsskötsel utförs av Förvaltning AB Malmöborg.<br /><br />
+            Fastighetsskötsel utförs av Förvaltning AB Malmöborg.
+            <br />
+            <br />
             Samtliga felanmälningar skall registreras direkt till Förvaltnings
             AB Malmöborg vardagar mellan kl.8.00 - 16.00 på telefon 072 353 46
             31 alternativt email info@malmoborg.se.
@@ -30,14 +41,16 @@ const contactUs = () => {
           <h3>Fastighetsskötsel och felanmälan</h3>
           <p>
             Fastighetsskötsel och felanmälningar utförs av Kanslihuset AB.{' '}
-            <br /><br />
+            <br />
+            <br />
             Felanmälan ska i första hand göras på www.kanslihuset.se under ”FÖR
             HYRESGÄSTER”, ”FELANMÄLAN”. Vid entren till trapphus finner ni
             detaljerade instruktioner och den information ni behöver uppge till
-            Kanslihuset vid felanmälan. <br /><br /> Det går också bra att ringa in på
-            vardagar (måndag-fredag) under telefontid kl. 08:00 - 11:00 på
-            telefonnummer 040 680 15 65.
-            <br /><br /> Akuta fel och störningar mellan kl. 11:00 - 16:30 som ej kan
+            Kanslihuset vid felanmälan. <br />
+            <br /> Det går också bra att ringa in på vardagar (måndag-fredag)
+            under telefontid kl. 08:00 - 11:00 på telefonnummer 040 680 15 65.
+            <br />
+            <br /> Akuta fel och störningar mellan kl. 11:00 - 16:30 som ej kan
             vänta till nästkommande vardag ring 040 680 15 67
           </p>
           <h3>Journummer</h3>

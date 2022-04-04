@@ -14,7 +14,24 @@
     }
   }
 
+  &__contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    top: 50%;
+
+    span {
+      border-left: 1px solid #ffffff;
+      border-right: 1px solid #ffffff;
+      height: 8rem;
+    }
+  }
+
   &__text {
+    
     display: flex;
     justify-content: center;
     position: absolute;
