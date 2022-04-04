@@ -13,6 +13,7 @@ const IndexCarousel = () => {
             height={1080}
             width={1920}
             layout='responsive'
+            priority
           />
         </div>
         <div className='image-container'>
@@ -22,6 +23,7 @@ const IndexCarousel = () => {
             height={1080}
             width={1920}
             layout='responsive'
+            priority
           />
         </div>
       </div>
@@ -33,6 +35,7 @@ const IndexCarousel = () => {
             height={500}
             width={700}
             layout='responsive'
+            priority
           />
         </div>
         <div className='image-container'>
@@ -42,6 +45,7 @@ const IndexCarousel = () => {
             height={500}
             width={700}
             layout='responsive'
+            priority
           />
         </div>
       </div>

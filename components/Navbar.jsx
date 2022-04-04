@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -7,6 +7,7 @@ import MobNav from './MobNav'
 const Navbar = () => {
   const [mobNav, setMobNav] = useState(false)
   const Toggle = () => setMobNav(!mobNav)
+  const [scrollY, setScrollY] = useState(0)
 
   const router = useRouter()
   const location = router.asPath
@@ -15,8 +16,24 @@ const Navbar = () => {
   const aboutActive = ['/about-us'].includes(location) ? 'active' : ''
   const contactActive = ['/contact-us'].includes(location) ? 'active' : ''
 
+  const logit = () => {
+    setScrollY(window.pageYOffset)
+  }
+
+  useEffect(() => {
+    const watchScroll = () => {
+      window.addEventListener('scroll', logit)
+    }
+    watchScroll()
+    return () => {
+      window.removeEventListener('scroll', logit)
+    }
+  })
+
+  const isScrolled = scrollY >= 10 ? 'scrolled' : ''
+
   return (
-    <div className='navbar'>
+    <div className={`navbar ${isScrolled}`}>
       <div className='navbar__image'>
         <Link href='/' passHref>
           <a>
