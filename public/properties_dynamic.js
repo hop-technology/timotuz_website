@@ -1,15 +1,15 @@
-import PågåendeYstad1 from '../public/aurora_01.jpg'
-import PågåendeYstad2 from '../public/aurora_02.jpg'
+import PågåendeYstad1 from '../public/aurora-street.webp'
+import PågåendeYstad2 from '../public/aurora-court.webp'
 
-import Ystad1 from '../public/ystad_1.jpg'
-import Ystad2 from '../public/ystad_2.jpg'
-import Ystad3 from '../public/ystad_3.jpg'
-import Ystad4 from '../public/ystad_4.jpg'
-import Limhamn1 from '../public/limhamn_1.jpg'
-import Limhamn2 from '../public/limhamn_2.JPG'
-import Limhamn3 from '../public/limhamn_3.jpg'
-import Limhamn4 from '../public/limhamn_4.jpg'
-import Helsingborg1 from '../public/helsingborg_1.jpg'
+import Ystad1 from '../public/ystad-yard.webp'
+import Ystad2 from '../public/ystad-street.webp'
+import Ystad3 from '../public/ystad-angel.webp'
+import Ystad4 from '../public/ystad-sushi.webp'
+import Limhamn1 from '../public/limhamn-front.webp'
+import Limhamn2 from '../public/limhamn-back.webp'
+import Limhamn3 from '../public/limhamn-back-2.webp'
+import Limhamn4 from '../public/limhamn-bench.webp'
+import Helsingborg1 from '../public/helsingborg-street.webp'
 
 const properties_dynamic = [
   {
@@ -36,12 +36,12 @@ const properties_dynamic = [
       {
         id: 1,
         photo: PågåendeYstad1,
-        alt: '',
+        alt: 'Gatuvy av nyproduktion Aurora',
       },
       {
         id: 2,
         photo: PågåendeYstad2,
-        alt: '',
+        alt: 'Innegård av nyproduktion Aurora',
       },
     ],
   },

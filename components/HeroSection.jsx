@@ -8,7 +8,7 @@ const HeroSection = () => {
       </div>
       <div className='hero-section__image-container'>
         <div className='hero-section__image-container--image'>
-          <Image src='/fastigheter_hero.jpg' layout='fill' alt='Birdseye view of property in Ystad' />
+          <Image src='/fastigheter-hero-1920.webp' layout='fill' alt='Birdseye view of property in Ystad' />
         </div>
       </div>
     </div>
