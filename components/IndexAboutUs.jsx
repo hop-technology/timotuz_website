@@ -29,7 +29,7 @@ const IndexAboutUs = () => {
             liksom mark för nyproduktion samt strategiskt belägna lager och
             logistikfastigheter.
           </p>
-          <Link href='/about-us' passHref>
+          <Link href='/om-oss' passHref>
             <button className='btn'>Mer om oss</button>
           </Link>
         </div>

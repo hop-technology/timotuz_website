@@ -16,7 +16,7 @@ const IndexGrid = () => {
           />
           <div className='kontakt__content'>
             <p>Söker du bostad?</p>
-            <Link href='/contact-us' passHref>
+            <Link href='/kontakta-oss' passHref>
               <button className='btn'>Kontakta oss</button>
             </Link>
           </div>
@@ -60,7 +60,7 @@ const IndexGrid = () => {
         </div>
         <div className='fastigheter'>
           <div className='fastigheter__content'>
-            <Link href='/properties' passHref>
+            <Link href='/fastigheter' passHref>
               <button className='btn'>Visa flera fastigheter</button>
             </Link>
           </div>

@@ -54,7 +54,7 @@ const IndexCarousel = () => {
         <div className='index-carousel__overlay--content'>
           <h1 className='title'>Nyproduktionsprojekt Aurora</h1>
           <h2 className='sub-title'>Gamla anor möter morgondagens vanor</h2>
-          <Link href='/properties' passHref>
+          <Link href='/fastigheter' passHref>
             <button className='btn'>Läs mer</button>
           </Link>
         </div>
