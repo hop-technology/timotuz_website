@@ -1,9 +1,8 @@
 .about-us {
-  position: absolute;
-  top: 6.5rem;
   display: flex;
-  align-content: stretch;
   background-color: $color-primary;
+  height: 110vh;
+  position: relative;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -11,7 +10,7 @@
 
   &__image-container {
     width: 50vw;
-    height: 100vh;
+    height: 110vh;
     position: relative;
 
     @include respond(tab-port) {
@@ -53,11 +52,15 @@
   &__text-container {
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 50%;
     color: $color-text-light;
+    top: 6.5rem;
+    height: auto;
 
     @include respond(tab-port) {
       width: 100%;
+      top: 0rem;
     }
 
     &--text {

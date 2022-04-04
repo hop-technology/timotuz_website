@@ -110,6 +110,7 @@ body {
 
 .footer {
   background-color: #002f33;
+  position: relative;
   bottom: 0;
 }
 .footer .content {
@@ -547,11 +548,10 @@ body {
 }
 
 .about-us {
-  position: absolute;
-  top: 6.5rem;
   display: flex;
-  align-content: stretch;
   background-color: #00474c;
+  height: 110vh;
+  position: relative;
 }
 @media only screen and (max-width: 56.25em) {
   .about-us {
@@ -560,7 +560,7 @@ body {
 }
 .about-us__image-container {
   width: 50vw;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 @media only screen and (max-width: 56.25em) {
@@ -600,12 +600,16 @@ body {
 .about-us__text-container {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 50%;
   color: #ffffff;
+  top: 6.5rem;
+  height: auto;
 }
 @media only screen and (max-width: 56.25em) {
   .about-us__text-container {
     width: 100%;
+    top: 0rem;
   }
 }
 .about-us__text-container--text {
