@@ -110,6 +110,7 @@ body {
 
 .footer {
   background-color: #002f33;
+  bottom: 0;
 }
 .footer .content {
   padding: 2% 0;
@@ -147,7 +148,7 @@ body {
 @media only screen and (max-width: 32.75em) {
   .footer .content__contact--item {
     border: none;
-    padding: 3rem 0;
+    padding: 2rem 0;
     text-align: center;
   }
 }
@@ -155,7 +156,7 @@ body {
   text-align: center;
   font-weight: 300;
   font-size: 1.2rem;
-  padding-bottom: 1.5rem;
+  padding: 2rem 0;
   color: rgba(255, 255, 255, 0.733);
 }
 
@@ -625,7 +626,9 @@ body {
   display: flex;
   align-content: stretch;
   background-color: #00474c;
-  height: 45rem;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 6rem;
 }
 @media only screen and (max-width: 56.25em) {
   .index-about-us {
@@ -640,7 +643,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .index-about-us__image-container {
     width: 100vw;
-    height: 60vh;
+    height: 100%;
   }
 }
 .index-about-us__image-container--image {
@@ -660,7 +663,7 @@ body {
     display: flex;
     left: 0;
     top: 0;
-    height: 100%;
+    height: fill;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -682,7 +685,7 @@ body {
   .index-about-us__text-container {
     width: 100%;
     background-color: #00474c;
-    padding: 3rem 10%;
+    padding: 5rem 10%;
     align-items: center;
   }
 }

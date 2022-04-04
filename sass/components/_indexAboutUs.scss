@@ -2,7 +2,9 @@
   display: flex;
   align-content: stretch;
   background-color: $color-primary;
-  height: 45rem;
+  height: fit-content;
+  position: relative;
+  margin-bottom: 6rem;
 
   @include respond(tab-port) {
     flex-direction: column;
@@ -15,7 +17,7 @@
 
     @include respond(tab-port) {
       width: 100vw;
-      height: 60vh;
+      height: 100%;
     }
 
     &--image {
@@ -35,7 +37,7 @@
         display: flex;
         left: 0;
         top: 0;
-        height: 100%;
+        height: fill;
         width: 100%;
         justify-content: center;
         align-items: center;
@@ -59,7 +61,7 @@
     @include respond(tab-port) {
       width: 100%;
       background-color: $color-primary;
-      padding: 3rem 10%;
+      padding: 5rem 10%;
       align-items: center;
     }
 
