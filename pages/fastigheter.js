@@ -10,6 +10,13 @@ const properties = () => {
 
   return (
     <>
+      <Head>
+        <title>Fastigheter | {site_name}</title>
+        <meta
+          name='description'
+          content='Fastigheter med hög standard i centrala lägen'
+        />
+      </Head>
       <HeroSection
         image={fastigheter_hero}
         alt={'Birdseye view of property in Ystad'}

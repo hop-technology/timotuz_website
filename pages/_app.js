@@ -1,4 +1,4 @@
-import '../styles/style.min.css'
+import '../styles/style.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
