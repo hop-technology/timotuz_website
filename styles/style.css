@@ -108,6 +108,27 @@ body {
   }
 }
 
+.footer {
+  background-color: #002f33;
+}
+.footer .content {
+  padding: 2% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .content__contact {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .content__contact--item {
+  padding: 0 2rem;
+}
+.footer .copy-right {
+  color: black;
+}
+
 .mob-nav-bg {
   display: none;
 }

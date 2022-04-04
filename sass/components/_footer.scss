@@ -1,0 +1,25 @@
+.footer {
+  background-color: $color-primary-dark;
+  .content {
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__image {
+      
+      
+    }
+    &__contact {
+      font-weight: 300;
+      display: flex;
+      justify-content: space-between;
+      &--item {
+        padding: 0 2rem;
+      }
+    }
+  }
+
+  .copy-right {
+    color: black;
+  }
+}
