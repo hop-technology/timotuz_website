@@ -55,6 +55,7 @@ const PropertiesSlider = ({ image }) => {
             key={index}
             selected={index === selectedIndex}
             onClick={() => scrollTo(index)}
+            name={`current image is ${index}`}
           />
         ))}
       </div>

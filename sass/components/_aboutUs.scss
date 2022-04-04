@@ -66,6 +66,7 @@
     @include respond(tab-port) {
       width: 100%;
       top: 0rem;
+      height: 100%;
     }
 
     &--text {
