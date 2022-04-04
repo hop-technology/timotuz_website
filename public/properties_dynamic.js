@@ -64,22 +64,22 @@ const properties_dynamic = [
       {
         id: 1,
         photo: Ystad1,
-        alt: '',
+        alt: 'Fågelvy över fastighet Fredrik 16, Ystad',
       },
       {
         id: 2,
         photo: Ystad2,
-        alt: '',
+        alt: 'Fågelvy över fastighet Fredrik 16 med gågata, Ystad',
       },
       {
         id: 3,
         photo: Ystad3,
-        alt: '',
+        alt: 'Fågelvy över området vid Fredrik 16, Ystad',
       },
       {
         id: 4,
         photo: Ystad4,
-        alt: '',
+        alt: 'Restaurang på markplan',
       },
     ],
   },
@@ -102,22 +102,22 @@ const properties_dynamic = [
       {
         id: 1,
         photo: Limhamn1,
-        alt: '',
+        alt: 'Fastighet Strutsen 25 framifrån, Limhamn',
       },
       {
         id: 1,
         photo: Limhamn2,
-        alt: '',
+        alt: 'Fastighet Strutsen 25 bakifrån, Limhamn',
       },
       {
         id: 3,
         photo: Limhamn3,
-        alt: '',
+        alt: 'Fastighet Strutsen 25 bakgård, Limhamn',
       },
       {
         id: 4,
         photo: Limhamn4,
-        alt: '',
+        alt: 'Fastighet Strutsen 25 bakgård uteplats, Limhamn',
       },
     ],
   },
@@ -135,7 +135,7 @@ const properties_dynamic = [
       {
         id: 1,
         photo: Helsingborg1,
-        alt: '',
+        alt: 'Industri fastighet Mörsaren Västra 6, Helsingborg',
       },
     ],
   },
