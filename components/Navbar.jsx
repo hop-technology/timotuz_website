@@ -63,19 +63,19 @@ const Navbar = () => {
           </Link>
         </div>
         <div className='navbar__links--link'>
-          <Link href='/properties' passHref>
+          <Link href='/fastigheter' passHref>
             <a className={`navbar__links--a ${propertiesActive}`}>
               Fastigheter
             </a>
           </Link>
         </div>
         <div className='navbar__links--link'>
-          <Link href='/about-us' passHref>
+          <Link href='/om-oss' passHref>
             <a className={`navbar__links--a ${aboutActive}`}>Om oss</a>
           </Link>
         </div>
         <div className='navbar__links--link'>
-          <Link href='/contact-us' passHref>
+          <Link href='/kontakta-oss' passHref>
             <a className={`navbar__links--a ${contactActive}`}>Kontakt</a>
           </Link>
         </div>

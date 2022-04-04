@@ -33,21 +33,21 @@ const MobNav = ({ show, close }) => {
                 </Link>
               </div>
               <div className='mob-nav__links--link'>
-                <Link href='/properties' passHref>
+                <Link href='/fastigheter' passHref>
                   <a className='mob-nav__links--a' onClick={() => close()}>
                     Fastigheter
                   </a>
                 </Link>
               </div>
               <div className='mob-nav__links--link'>
-                <Link href='/about-us' passHref>
+                <Link href='/om-oss' passHref>
                   <a className='mob-nav__links--a' onClick={() => close()}>
                     Om oss
                   </a>
                 </Link>
               </div>
               <div className='mob-nav__links--link'>
-                <Link href='/contact-us' passHref>
+                <Link href='/kontakta-oss' passHref>
                   <a className='mob-nav__links--a' onClick={() => close()}>
                     Kontakt
                   </a>

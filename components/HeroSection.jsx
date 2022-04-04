@@ -1,14 +1,26 @@
 import Image from 'next/image'
 
-const HeroSection = () => {
+const HeroSection = ({ image, alt, text }) => {
   return (
     <div className='hero-section'>
-      <div className='hero-section__text'>
-        <h1>Fastigheter med hög standard i centrala lägen</h1>
-      </div>
+      {text.tag_line ? (
+        <div className='hero-section__text'>
+          <h1>{text.tag_line}</h1>
+        </div>
+      ) : (
+        <div className='hero-section__contact-us'>
+          <div className='hero-section__contact-us--item'>
+            <h2>{text[0].number}</h2>
+          </div>
+          <div className='hero-section__contact-us--item'>
+            <h2>{text[0].email}</h2>
+          </div>
+        </div>
+      )}
+
       <div className='hero-section__image-container'>
         <div className='hero-section__image-container--image'>
-          <Image src='/fastigheter-hero-1920.webp' layout='fill' alt='Birdseye view of property in Ystad' />
+          <Image src={image} layout='fill' alt={alt} />
         </div>
       </div>
     </div>
