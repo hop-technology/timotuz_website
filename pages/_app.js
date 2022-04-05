@@ -1,5 +1,5 @@
 import { NextSeo } from 'next-seo'
-import '../styles/style.css'
+import '../styles/style.min.css'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
