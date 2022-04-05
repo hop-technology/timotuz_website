@@ -5,7 +5,7 @@ import PropertiesCards from '../components/PropertiesCards'
 import SlideModal from '../components/SlideModal'
 import fastigheter_hero from '../public/fastigheter-hero-1920.webp'
 
-const properties = () => {
+const Properties = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [index, setIndex] = useState('')
   const properties_text = {
@@ -48,4 +48,4 @@ const properties = () => {
   )
 }
 
-export default properties
+export default Properties
