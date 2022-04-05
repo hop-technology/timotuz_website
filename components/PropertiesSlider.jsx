@@ -1,12 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
-import {
-  DotButton,
-  PrevButton,
-  NextButton,
-  FullScreen,
-} from './SlideshowButton'
+import { DotButton, PrevButton, NextButton } from './SlideshowButton'
 
 const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true })
@@ -55,7 +50,7 @@ const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   const handleClick = (event) => {
     event.preventDefault()
     setIsOpen(true)
-    currentSelection = event?.currentTarget.id
+    currentSelection(event?.currentTarget.id)
   }
 
   return (

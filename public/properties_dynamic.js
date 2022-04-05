@@ -13,7 +13,7 @@ import Helsingborg1 from '../public/helsingborg-street.webp'
 
 const properties_dynamic = [
   {
-    id: 1,
+    id: 0,
     district: 'YSTAD',
     name: 'Pågående nyproduktion: Aurora',
     description_text: [
@@ -48,7 +48,7 @@ const properties_dynamic = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     district: 'YSTAD',
     name: 'Fredrik 16',
     description:
@@ -90,7 +90,7 @@ const properties_dynamic = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     district: 'Malmö / Limhamn',
     name: 'Strutsen 25',
     description:
@@ -128,7 +128,7 @@ const properties_dynamic = [
     ],
   },
   {
-    id: 4,
+    id: 3,
     district: 'Helsingborg',
     name: 'Mörsaren Västra 6',
     description:

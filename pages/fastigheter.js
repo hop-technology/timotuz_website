@@ -7,12 +7,19 @@ import fastigheter_hero from '../public/fastigheter-hero-1920.webp'
 
 const properties = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [index, setIndex] = useState('')
   const properties_text = {
     id: 1,
     tag_line: 'Fastigheter med hög standard i centrala lägen',
   }
 
+  const selectedSlide = {
+  
+    id: index
+  } 
+    
   return (
+
     <>
       <NextSeo
         description='Fastigheter med hög standard i centrala lägen'
@@ -36,8 +43,8 @@ const properties = () => {
         text={properties_text}
       />
       <div className='properties'>
-        <PropertiesCards setIsOpen={setIsOpen} />
-        {isOpen && <SlideModal setIsOpen={setIsOpen} />}
+        <PropertiesCards setIsOpen={setIsOpen} currentSelection={setIndex} />
+        {isOpen && <SlideModal setIsOpen={setIsOpen} index={selectedSlide} />}
       </div>
     </>
   )
