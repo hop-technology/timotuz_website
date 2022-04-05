@@ -11,7 +11,7 @@ const IndexGrid = () => {
             src='/kontakt-grid.webp'
             height={248}
             width={346}
-            alt='Innegård på nyproduktion Aurora'
+            alt=''
             layout='responsive'
           />
           <div className='kontakt__content'>
@@ -21,43 +21,49 @@ const IndexGrid = () => {
             </Link>
           </div>
         </div>
-        <div className='aurora'>
-          <Image
-            src='/court-grid.webp'
-            height={574}
-            width={346}
-            alt='Innegård på nyproduktion Aurora'
-            layout='responsive'
-          />
-          <div className='aurora__content'>
-            <p className='aurora__content--top-text'>Nyproduktion</p>
-            <p className='aurora__content--bot-text'>Aurora</p>
+        <Link href='/fastigheter' passHref>
+          <div className='aurora'>
+            <Image
+              src='/court-grid.webp'
+              height={574}
+              width={346}
+              alt='Innegård på nyproduktion Aurora'
+              layout='responsive'
+            />
+            <div className='aurora__content'>
+              <p className='aurora__content--top-text'>Nyproduktion</p>
+              <p className='aurora__content--bot-text'>Aurora</p>
+            </div>
           </div>
-        </div>
-        <div className='ystad'>
-          <Image
-            src='/ystad-grid.webp'
-            height={248}
-            width={346}
-            alt='Innegård på nyproduktion Aurora'
-            layout='responsive'
-          />
-          <div className='ystad__content'>
-            <p className='ystad__content--top-text'>Ystad</p>
+        </Link>
+        <Link href='/fastigheter' passHref>
+          <div className='ystad'>
+            <Image
+              src='/ystad-grid.webp'
+              height={248}
+              width={346}
+              alt='Fågelvy över fastighet i Ystad'
+              layout='responsive'
+            />
+            <div className='ystad__content'>
+              <p className='ystad__content--top-text'>Ystad</p>
+            </div>
           </div>
-        </div>
-        <div className='malmo'>
-          <Image
-            src='/limhamn-grid.webp'
-            height={248}
-            width={346}
-            alt='Innegård på nyproduktion Aurora'
-            layout='responsive'
-          />
-          <div className='malmo__content'>
-            <p className='malmo__content--top-text'>Malmö/Limhamn</p>
+        </Link>
+        <Link href='/fastigheter' passHref>
+          <div className='malmo'>
+            <Image
+              src='/limhamn-grid.webp'
+              height={248}
+              width={346}
+              alt='Fågelvy över hus i Limhamn'
+              layout='responsive'
+            />
+            <div className='malmo__content'>
+              <p className='malmo__content--top-text'>Malmö/Limhamn</p>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className='fastigheter'>
           <div className='fastigheter__content'>
             <Link href='/fastigheter' passHref>

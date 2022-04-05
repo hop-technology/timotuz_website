@@ -73,6 +73,7 @@
     .aurora {
       position: relative;
       grid-area: b;
+      cursor: pointer;
 
       &__content {
         position: absolute;
@@ -106,7 +107,8 @@
     .ystad {
       position: relative;
       grid-area: c;
-
+      cursor: pointer;
+      
       &__content {
         position: absolute;
         display: flex;
@@ -134,6 +136,7 @@
     .malmo {
       position: relative;
       grid-area: d;
+      cursor: pointer;
 
       &__content {
         position: absolute;

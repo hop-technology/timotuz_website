@@ -951,6 +951,7 @@ body {
 .grid-container .index-grid .aurora {
   position: relative;
   grid-area: b;
+  cursor: pointer;
 }
 .grid-container .index-grid .aurora__content {
   position: absolute;
@@ -978,6 +979,7 @@ body {
 .grid-container .index-grid .ystad {
   position: relative;
   grid-area: c;
+  cursor: pointer;
 }
 .grid-container .index-grid .ystad__content {
   position: absolute;
@@ -1001,6 +1003,7 @@ body {
 .grid-container .index-grid .malmo {
   position: relative;
   grid-area: d;
+  cursor: pointer;
 }
 .grid-container .index-grid .malmo__content {
   position: absolute;

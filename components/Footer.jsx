@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
         <div className='content__contact'>
           <div className='content__contact--item'>
-            <p>0404 685 94 00</p>
+            <p>040 685 94 00</p>
           </div>
           <div className='content__contact--item'>
             <p>info@timotuz.com</p>
