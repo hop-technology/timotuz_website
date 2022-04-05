@@ -1,7 +1,5 @@
 import properties_dynamic from '../public/properties_dynamic'
-// import PropertiesSlider from './PropertiesSlider'
 import ImageGallery from 'react-image-gallery'
-
 
 const PropertiesCards = () => {
   return properties_dynamic.map((property, index) => {

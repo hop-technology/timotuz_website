@@ -12,9 +12,9 @@ const Navbar = () => {
   const router = useRouter()
   const location = router.asPath
   const homeActive = ['/'].includes(location) ? 'active' : ''
-  const propertiesActive = ['/properties'].includes(location) ? 'active' : ''
-  const aboutActive = ['/about-us'].includes(location) ? 'active' : ''
-  const contactActive = ['/contact-us'].includes(location) ? 'active' : ''
+  const propertiesActive = ['/fastigheter'].includes(location) ? 'active' : ''
+  const aboutActive = ['/om-oss'].includes(location) ? 'active' : ''
+  const contactActive = ['/kontakta-oss'].includes(location) ? 'active' : ''
 
   const logit = () => {
     setScrollY(window.pageYOffset)
