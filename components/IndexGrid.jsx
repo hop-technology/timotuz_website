@@ -18,7 +18,9 @@ const IndexGrid = () => {
           <div className='kontakt__content'>
             <p>Söker du bostad?</p>
             <Link href='/kontakta-oss' passHref>
-              <button className='btn'>Kontakta oss</button>
+              <a>
+                <button className='btn'>Kontakta oss</button>
+              </a>
             </Link>
           </div>
         </div>
