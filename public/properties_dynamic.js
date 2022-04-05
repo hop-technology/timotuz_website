@@ -23,17 +23,17 @@ const properties_dynamic = [
       {
         id: 1,
         original:
-          'https://deploy-preview-13--timotuz-fastigheter-dev.netlify.app/aurora-court.webp',
+          'https://images.unsplash.com/photo-1648775524994-ebad0f7071b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         thumbnail:
-          'https://deploy-preview-13--timotuz-fastigheter-dev.netlify.app/aurora-court.webp',
+          'https://images.unsplash.com/photo-1648775524994-ebad0f7071b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
         alt: 'Gatuvy av nyproduktion Aurora',
       },
       {
         id: 2,
         original:
-          'https://deploy-preview-13--timotuz-fastigheter-dev.netlify.app/aurora-street.webp',
+          'https://images.unsplash.com/photo-1596495717655-5a38ee8ad7b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80',
         thumbnail:
-          'https://deploy-preview-13--timotuz-fastigheter-dev.netlify.app/aurora-street.webp',
+          'https://images.unsplash.com/photo-1596495717655-5a38ee8ad7b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80',
         alt: 'Innegård av nyproduktion Aurora',
       },
     ],
