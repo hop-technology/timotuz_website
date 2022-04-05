@@ -22,19 +22,21 @@ const IndexGrid = () => {
           </div>
         </div>
         <Link href='/fastigheter' passHref>
-          <div className='aurora'>
-            <Image
-              src='/court-grid.webp'
-              height={574}
-              width={346}
-              alt='Innegård på nyproduktion Aurora'
-              layout='responsive'
-            />
-            <div className='aurora__content'>
-              <p className='aurora__content--top-text'>Nyproduktion</p>
-              <p className='aurora__content--bot-text'>Aurora</p>
+          <a>
+            <div className='aurora'>
+              <Image
+                src='/court-grid.webp'
+                height={574}
+                width={346}
+                alt='Innegård på nyproduktion Aurora'
+                layout='responsive'
+              />
+              <div className='aurora__content'>
+                <p className='aurora__content--top-text'>Nyproduktion</p>
+                <p className='aurora__content--bot-text'>Aurora</p>
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Link href='/fastigheter' passHref>
           <div className='ystad'>
