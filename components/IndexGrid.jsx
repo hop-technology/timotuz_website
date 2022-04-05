@@ -13,6 +13,7 @@ const IndexGrid = () => {
             width={346}
             alt=''
             layout='responsive'
+            priority
           />
           <div className='kontakt__content'>
             <p>Söker du bostad?</p>
@@ -21,22 +22,23 @@ const IndexGrid = () => {
             </Link>
           </div>
         </div>
-        {/* <Link href='/fastigheter' passHref> */}
-        <div className='aurora'>
-          <Image
-            src='/court-grid.webp'
-            height={574}
-            width={346}
-            alt='Innegård på nyproduktion Aurora'
-            layout='responsive'
-          />
+        <Link href='/fastigheter' passHref>
+          <div className='aurora'>
+            <Image
+              src='/court-grid.webp'
+              height={574}
+              width={346}
+              alt='Innegård på nyproduktion Aurora'
+              layout='responsive'
+              priority
+            />
 
-          <div className='aurora__content'>
-            <p className='aurora__content--top-text'>Nyproduktion</p>
-            <p className='aurora__content--bot-text'>Aurora</p>
+            <div className='aurora__content'>
+              <p className='aurora__content--top-text'>Nyproduktion</p>
+              <p className='aurora__content--bot-text'>Aurora</p>
+            </div>
           </div>
-        </div>
-        {/* </Link> */}
+        </Link>
         <Link href='/fastigheter' passHref>
           <div className='ystad'>
             <Image
@@ -45,6 +47,7 @@ const IndexGrid = () => {
               width={346}
               alt='Fågelvy över fastighet i Ystad'
               layout='responsive'
+              priority
             />
             <div className='ystad__content'>
               <p className='ystad__content--top-text'>Ystad</p>
@@ -59,6 +62,7 @@ const IndexGrid = () => {
               width={346}
               alt='Fågelvy över hus i Limhamn'
               layout='responsive'
+              priority
             />
 
             <div className='malmo__content'>

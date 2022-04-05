@@ -10,7 +10,7 @@ const Footer = () => {
             height={100}
             width={250}
             alt='Timotuz logo'
-            as='img/svg'
+            priority
           />
         </div>
         <div className='content__contact'>
