@@ -35,14 +35,17 @@ const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   let slideShow = image?.map((image, index) => {
     return (
       <div className='embla__slide' key={index}>
-        <button id={imageId} onClick={(event) => handleClick(event)}>
-          <Image
-            src={image.photo.src}
-            width={2000}
-            height={1500}
-            alt={image.alt}
-          />
-        </button>
+        <a>
+          <button id={imageId} onClick={(event) => handleClick(event)}>
+            <Image
+              src={image.photo.src}
+              width={2000}
+              height={1500}
+              alt={image.alt}
+              priority
+            />
+          </button>
+        </a>
       </div>
     )
   })
