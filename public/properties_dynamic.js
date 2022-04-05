@@ -35,12 +35,14 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        photo: PågåendeYstad1,
+        original: 'http://localhost:3000/aurora-court.webp',
+        thumbnail: 'http://localhost:3000/aurora-court.webp',
         alt: 'Gatuvy av nyproduktion Aurora',
       },
       {
         id: 2,
-        photo: PågåendeYstad2,
+        original: 'http://localhost:3000/aurora-street.webp',
+        thumbnail: 'http://localhost:3000/aurora-street.webp',
         alt: 'Innegård av nyproduktion Aurora',
       },
     ],
@@ -63,22 +65,26 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        photo: Ystad1,
+        original: 'http://localhost:3000/ystad-yard.webp',
+        thumbnail: 'http://localhost:3000/ystad-yard.webp',
         alt: 'Fågelvy över fastighet Fredrik 16, Ystad',
       },
       {
         id: 2,
-        photo: Ystad2,
+        original: 'http://localhost:3000/ystad-street.webp',
+        thumbnail: 'http://localhost:3000/ystad-street.webp',
         alt: 'Fågelvy över fastighet Fredrik 16 med gågata, Ystad',
       },
       {
         id: 3,
-        photo: Ystad3,
+        original: 'http://localhost:3000/ystad-angel.webp',
+        thumbnail: 'http://localhost:3000/ystad-angel.webp',
         alt: 'Fågelvy över området vid Fredrik 16, Ystad',
       },
       {
         id: 4,
-        photo: Ystad4,
+        original: 'http://localhost:3000/ystad-sushi.webp',
+        thumbnail: 'http://localhost:3000/ystad-sushi.webp',
         alt: 'Restaurang på markplan',
       },
     ],
@@ -101,22 +107,22 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        photo: Limhamn1,
+        original: Limhamn1,
         alt: 'Fastighet Strutsen 25 framifrån, Limhamn',
       },
       {
         id: 1,
-        photo: Limhamn2,
+        original: Limhamn2,
         alt: 'Fastighet Strutsen 25 bakifrån, Limhamn',
       },
       {
         id: 3,
-        photo: Limhamn3,
+        original: Limhamn3,
         alt: 'Fastighet Strutsen 25 bakgård, Limhamn',
       },
       {
         id: 4,
-        photo: Limhamn4,
+        original: Limhamn4,
         alt: 'Fastighet Strutsen 25 bakgård uteplats, Limhamn',
       },
     ],
@@ -134,7 +140,7 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        photo: Helsingborg1,
+        original: Helsingborg1,
         alt: 'Industri fastighet Mörsaren Västra 6, Helsingborg',
       },
     ],
