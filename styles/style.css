@@ -1028,7 +1028,6 @@ body {
 }
 .properties-cards__image-slider {
   width: 50%;
-  overflow: hidden;
 }
 @media only screen and (max-width: 56.25em) {
   .properties-cards__image-slider {

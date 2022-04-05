@@ -1,8 +1,8 @@
 import { NextSeo } from 'next-seo'
-import '../styles/style.css'
 import Navbar from '../components/Navbar'
+import '../styles/style.css'
+import 'react-image-gallery/styles/css/image-gallery.css'
 import Footer from '../components/Footer'
-
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
             'Vi förvärvar, förädlar, nyproducerar, exploaterar, äger och förvaltar hyresbostäder i Södra Sverige.',
           images: [
             {
-              url: 'public\aurora-court.webp',
+              url: 'publicaurora-court.webp',
               width: 1200,
               height: 630,
               alt: 'Timotuz Fastigheter',
