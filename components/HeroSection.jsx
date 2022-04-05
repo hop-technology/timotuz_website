@@ -20,7 +20,7 @@ const HeroSection = ({ image, alt, text }) => {
 
       <div className='hero-section__image-container'>
         <div className='hero-section__image-container--image'>
-          <Image src={image} layout='fill' alt={alt} />
+          <Image src={image} layout='fill' alt={alt} priority/>
         </div>
       </div>
     </div>
