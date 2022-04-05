@@ -1,16 +1,3 @@
-import PågåendeYstad1 from '../public/aurora-street.webp'
-import PågåendeYstad2 from '../public/aurora-court.webp'
-
-import Ystad1 from '../public/ystad-yard.webp'
-import Ystad2 from '../public/ystad-street.webp'
-import Ystad3 from '../public/ystad-angel.webp'
-import Ystad4 from '../public/ystad-sushi.webp'
-import Limhamn1 from '../public/limhamn-front.webp'
-import Limhamn2 from '../public/limhamn-back.webp'
-import Limhamn3 from '../public/limhamn-back-2.webp'
-import Limhamn4 from '../public/limhamn-bench.webp'
-import Helsingborg1 from '../public/helsingborg-street.webp'
-
 const properties_dynamic = [
   {
     id: 1,
@@ -107,22 +94,26 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: Limhamn1,
+        original: 'http://localhost:3000/limhamn-front.webp',
+        thumbnail: 'http://localhost:3000/limhamn-front.webp',
         alt: 'Fastighet Strutsen 25 framifrån, Limhamn',
       },
       {
         id: 1,
-        original: Limhamn2,
+        original: 'http://localhost:3000/limhamn-back.webp',
+        thumbnail: 'http://localhost:3000/limhamn-back.webp',
         alt: 'Fastighet Strutsen 25 bakifrån, Limhamn',
       },
       {
         id: 3,
-        original: Limhamn3,
+        original: 'http://localhost:3000/limhamn-back-2.webp',
+        thumbnail: 'http://localhost:3000/limhamn-back-2.webp',
         alt: 'Fastighet Strutsen 25 bakgård, Limhamn',
       },
       {
         id: 4,
-        original: Limhamn4,
+        original: 'http://localhost:3000/limhamn-bench.webp',
+        thumbnail: 'http://localhost:3000/limhamn-bench.webp',
         alt: 'Fastighet Strutsen 25 bakgård uteplats, Limhamn',
       },
     ],
@@ -140,7 +131,8 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: Helsingborg1,
+        original: 'http://localhost:3000/helsingborg-street.webp',
+        thumbnail: 'http://localhost:3000/helsingborg-street.webp',
         alt: 'Industri fastighet Mörsaren Västra 6, Helsingborg',
       },
     ],
