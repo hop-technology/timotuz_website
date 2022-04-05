@@ -29,7 +29,9 @@ const IndexAboutUs = () => {
             belägna lager och logistikfastigheter.
           </p>
           <Link href='/om-oss' passHref>
-            <button className='btn'>Mer om oss</button>
+            <a>
+              <button className='btn'>Mer om oss</button>
+            </a>
           </Link>
         </div>
       </div>

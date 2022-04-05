@@ -946,6 +946,9 @@ body {
   justify-content: center;
   width: 100%;
 }
+.grid-container a {
+  color: inherit;
+}
 .grid-container .index-grid {
   display: grid;
   height: 100%;

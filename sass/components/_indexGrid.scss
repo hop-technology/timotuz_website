@@ -3,6 +3,10 @@
   justify-content: center;
   width: 100%;
 
+  a {
+    color: inherit;
+  }
+
   .index-grid {
     display: grid;
     height: 100%;
