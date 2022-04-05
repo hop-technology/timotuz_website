@@ -35,17 +35,13 @@ const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   let slideShow = image?.map((image, index) => {
     return (
       <div className='embla__slide' key={index}>
-        <a id={imageId} onClick={(event) => handleClick(event)}>
-          <button>
-            <Image
-              src={image.photo.src}
-              width={2000}
-              height={1500}
-              alt={image.alt}
-              priority
-            />
-          </button>
-        </a>
+        <Image
+          src={image.photo.src}
+          width={2000}
+          height={1500}
+          alt={image.alt}
+          priority
+        />
       </div>
     )
   })
@@ -61,6 +57,7 @@ const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
       <div className='embla__container'>{slideShow}</div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      <button id={imageId} onClick={(event) => handleClick(event)}>FullScreen</button>
       <div className='embla__dots'>
         {scrollSnaps.map((_, index) => (
           <DotButton
