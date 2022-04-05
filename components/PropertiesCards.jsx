@@ -8,7 +8,7 @@ const PropertiesCards = () => {
     return (
       <div className='properties-cards' key={index}>
         <div className='properties-cards__image-slider'>
-          <ImageGallery items={property.images} as='div' />
+          <ImageGallery items={property.images} />
         </div>
         <div className='properties-cards__text'>
           <div>
