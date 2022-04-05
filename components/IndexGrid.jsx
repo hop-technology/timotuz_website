@@ -25,57 +25,65 @@ const IndexGrid = () => {
           </div>
         </div>
         <Link href='/fastigheter' passHref>
-          <div className='aurora'>
-            <Image
-              src='/court-grid.webp'
-              height={574}
-              width={346}
-              alt='Innegård på nyproduktion Aurora'
-              layout='responsive'
-              priority
-            />
+          <a>
+            <div className='aurora'>
+              <Image
+                src='/court-grid.webp'
+                height={574}
+                width={346}
+                alt='Innegård på nyproduktion Aurora'
+                layout='responsive'
+                priority
+              />
 
-            <div className='aurora__content'>
-              <p className='aurora__content--top-text'>Nyproduktion</p>
-              <p className='aurora__content--bot-text'>Aurora</p>
+              <div className='aurora__content'>
+                <p className='aurora__content--top-text'>Nyproduktion</p>
+                <p className='aurora__content--bot-text'>Aurora</p>
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Link href='/fastigheter' passHref>
-          <div className='ystad'>
-            <Image
-              src='/ystad-grid.webp'
-              height={248}
-              width={346}
-              alt='Fågelvy över fastighet i Ystad'
-              layout='responsive'
-              priority
-            />
-            <div className='ystad__content'>
-              <p className='ystad__content--top-text'>Ystad</p>
+          <a>
+            <div className='ystad'>
+              <Image
+                src='/ystad-grid.webp'
+                height={248}
+                width={346}
+                alt='Fågelvy över fastighet i Ystad'
+                layout='responsive'
+                priority
+              />
+              <div className='ystad__content'>
+                <p className='ystad__content--top-text'>Ystad</p>
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <Link href='/fastigheter' passHref>
-          <div className='malmo'>
-            <Image
-              src='/limhamn-grid.webp'
-              height={248}
-              width={346}
-              alt='Fågelvy över hus i Limhamn'
-              layout='responsive'
-              priority
-            />
+          <a>
+            <div className='malmo'>
+              <Image
+                src='/limhamn-grid.webp'
+                height={248}
+                width={346}
+                alt='Fågelvy över hus i Limhamn'
+                layout='responsive'
+                priority
+              />
 
-            <div className='malmo__content'>
-              <p className='malmo__content--top-text'>Malmö/Limhamn</p>
+              <div className='malmo__content'>
+                <p className='malmo__content--top-text'>Malmö/Limhamn</p>
+              </div>
             </div>
-          </div>
+          </a>
         </Link>
         <div className='fastigheter'>
           <div className='fastigheter__content'>
             <Link href='/fastigheter' passHref>
-              <button className='btn'>Visa flera fastigheter</button>
+              <a>
+                <button className='btn'>Visa flera fastigheter</button>
+              </a>
             </Link>
           </div>
         </div>
