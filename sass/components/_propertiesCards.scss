@@ -17,6 +17,7 @@
 
   &__image-slider {
     width: 50%;
+    overflow: hidden;
 
     @include respond(tab-port) {
       width: 100%;

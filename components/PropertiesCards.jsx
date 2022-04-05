@@ -1,12 +1,14 @@
 import properties_dynamic from '../public/properties_dynamic'
-import PropertiesSlider from './PropertiesSlider'
+// import PropertiesSlider from './PropertiesSlider'
+import ImageGallery from 'react-image-gallery'
+
 
 const PropertiesCards = () => {
   return properties_dynamic.map((property, index) => {
     return (
       <div className='properties-cards' key={index}>
         <div className='properties-cards__image-slider'>
-          <PropertiesSlider image={property.images} />
+          <ImageGallery items={property.images} as='div' />
         </div>
         <div className='properties-cards__text'>
           <div>
@@ -20,7 +22,7 @@ const PropertiesCards = () => {
               ? property.description
               : property.description_text?.map((text, index) => {
                   return (
-                    <div key={index} >
+                    <div key={index}>
                       <p>{text.description_1}</p>
                       <br />
                       <p>{text.description_2}</p>
@@ -63,8 +65,7 @@ const PropertiesCards = () => {
               <a
                 href='https://www.brfaurora.nu'
                 target='_blank'
-                rel='noreferrer'
-              >
+                rel='noreferrer'>
                 <p>{property.button}</p>
               </a>
             </button>
