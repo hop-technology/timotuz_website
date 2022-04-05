@@ -1,7 +1,6 @@
 import { NextSeo } from 'next-seo'
 import Navbar from '../components/Navbar'
 import '../styles/style.css'
-import 'react-image-gallery/styles/css/image-gallery.css'
 import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {

@@ -1,3 +1,16 @@
+import PågåendeYstad1 from '../public/aurora-street.webp'
+import PågåendeYstad2 from '../public/aurora-court.webp'
+
+import Ystad1 from '../public/ystad-yard.webp'
+import Ystad2 from '../public/ystad-street.webp'
+import Ystad3 from '../public/ystad-angel.webp'
+import Ystad4 from '../public/ystad-sushi.webp'
+import Limhamn1 from '../public/limhamn-front.webp'
+import Limhamn2 from '../public/limhamn-back.webp'
+import Limhamn3 from '../public/limhamn-back-2.webp'
+import Limhamn4 from '../public/limhamn-bench.webp'
+import Helsingborg1 from '../public/helsingborg-street.webp'
+
 const properties_dynamic = [
   {
     id: 1,
@@ -22,18 +35,14 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original:
-          'https://images.unsplash.com/photo-1648775524994-ebad0f7071b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-        thumbnail:
-          'https://images.unsplash.com/photo-1648775524994-ebad0f7071b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        photo: PågåendeYstad2,
+
         alt: 'Gatuvy av nyproduktion Aurora',
       },
       {
         id: 2,
-        original:
-          'https://images.unsplash.com/photo-1596495717655-5a38ee8ad7b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80',
-        thumbnail:
-          'https://images.unsplash.com/photo-1596495717655-5a38ee8ad7b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80',
+        photo: PågåendeYstad1,
+
         alt: 'Innegård av nyproduktion Aurora',
       },
     ],
@@ -56,33 +65,26 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: 'https://timotuz-fastigheter-dev.netlify.app/ystad-yard.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-yard.webp',
+        photo: Ystad1,
+
         alt: 'Fågelvy över fastighet Fredrik 16, Ystad',
       },
       {
         id: 2,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-street.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-street.webp',
+        photo: Ystad2,
+
         alt: 'Fågelvy över fastighet Fredrik 16 med gågata, Ystad',
       },
       {
         id: 3,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-angel.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-angel.webp',
+        photo: Ystad3,
+
         alt: 'Fågelvy över området vid Fredrik 16, Ystad',
       },
       {
         id: 4,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-sushi.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/ystad-sushi.webp',
+        photo: Ystad4,
+
         alt: 'Restaurang på markplan',
       },
     ],
@@ -105,34 +107,22 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-front.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-front.webp',
+        photo: Limhamn1,
         alt: 'Fastighet Strutsen 25 framifrån, Limhamn',
       },
       {
         id: 1,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-back.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-back.webp',
+        photo: Limhamn2,
         alt: 'Fastighet Strutsen 25 bakifrån, Limhamn',
       },
       {
         id: 3,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-back-2.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-back-2.webp',
+        photo: Limhamn3,
         alt: 'Fastighet Strutsen 25 bakgård, Limhamn',
       },
       {
         id: 4,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-bench.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/limhamn-bench.webp',
+        photo: Limhamn4,
         alt: 'Fastighet Strutsen 25 bakgård uteplats, Limhamn',
       },
     ],
@@ -150,10 +140,8 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original:
-          'https://timotuz-fastigheter-dev.netlify.app/helsingborg-street.webp',
-        thumbnail:
-          'https://timotuz-fastigheter-dev.netlify.app/helsingborg-street.webp',
+        photo: Helsingborg1,
+
         alt: 'Industri fastighet Mörsaren Västra 6, Helsingborg',
       },
     ],

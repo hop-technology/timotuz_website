@@ -1,14 +1,12 @@
 import properties_dynamic from '../public/properties_dynamic'
-// import PropertiesSlider from './PropertiesSlider'
-import ImageGallery from 'react-image-gallery'
-
+import PropertiesSlider from './PropertiesSlider'
 
 const PropertiesCards = () => {
   return properties_dynamic.map((property, index) => {
     return (
       <div className='properties-cards' key={index}>
         <div className='properties-cards__image-slider'>
-          <ImageGallery items={property.images} />
+          <PropertiesSlider image={property.images} />
         </div>
         <div className='properties-cards__text'>
           <div>
