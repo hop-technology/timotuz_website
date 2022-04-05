@@ -8,8 +8,7 @@ import {
   FullScreen,
 } from './SlideshowButton'
 
-const PropertiesSlider = ({ image, setIsOpen }) => {
-
+const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true })
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
@@ -41,20 +40,23 @@ const PropertiesSlider = ({ image, setIsOpen }) => {
   let slideShow = image?.map((image, index) => {
     return (
       <div className='embla__slide' key={index}>
-        <Image
-          src={image.photo.src}
-          width={2000}
-          height={1500}
-          alt={image.alt}
-        />
+        <button id={imageId} onClick={(event) => handleClick(event)}>
+          <Image
+            src={image.photo.src}
+            width={2000}
+            height={1500}
+            alt={image.alt}
+          />
+        </button>
       </div>
     )
   })
 
-  const handleClick = () => {
+  const handleClick = (event) => {
+    event.preventDefault()
     setIsOpen(true)
+    currentSelection = event?.currentTarget.id
   }
-
 
   return (
     <div className='embla' ref={emblaRef}>
@@ -70,10 +72,6 @@ const PropertiesSlider = ({ image, setIsOpen }) => {
             name={`current image is ${index}`}
           />
         ))}
-        <FullScreen
-          onClick={handleClick}
-          enabled={fullScreenBtnEnabled}
-        />
       </div>
     </div>
   )

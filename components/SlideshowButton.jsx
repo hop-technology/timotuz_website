@@ -39,6 +39,7 @@ export const FullScreen = ({ enabled, onClick }) => (
   <button
     onClick={onClick}
     disabled={!enabled}
+   
     name='full screen button'
     className='embla__button embla__button--fullscreen'
   >

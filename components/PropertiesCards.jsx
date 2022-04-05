@@ -1,12 +1,17 @@
 import properties_dynamic from '../public/properties_dynamic'
 import PropertiesSlider from './PropertiesSlider'
 
-const PropertiesCards = ({ setIsOpen }) => {
+const PropertiesCards = ({ setIsOpen, currentSelection }) => {
   return properties_dynamic.map((property, index) => {
     return (
       <div className='properties-cards' key={index}>
         <div className='properties-cards__image-slider'>
-          <PropertiesSlider image={property.images} setIsOpen={setIsOpen} />
+          <PropertiesSlider
+            image={property.images}
+            setIsOpen={setIsOpen}
+            imageId={property.id}
+            currentSelection={currentSelection}
+          />
         </div>
         <div className='properties-cards__text'>
           <div>
