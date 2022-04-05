@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { NextSeo } from 'next-seo'
 import HeroSection from '../components/HeroSection'
 import PropertiesCards from '../components/PropertiesCards'
@@ -14,12 +14,10 @@ const properties = () => {
   }
 
   const selectedSlide = {
-  
-    id: index
-  } 
-    
-  return (
+    id: index,
+  }
 
+  return (
     <>
       <NextSeo
         description='Fastigheter med hög standard i centrala lägen'
