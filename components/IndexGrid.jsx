@@ -22,8 +22,8 @@ const IndexGrid = () => {
           </div>
         </div>
         <Link href='/fastigheter' passHref>
-          <a>
-            <div className='aurora'>
+          <div className='aurora'>
+            <>
               <Image
                 src='/court-grid.webp'
                 height={574}
@@ -31,36 +31,40 @@ const IndexGrid = () => {
                 alt='Innegård på nyproduktion Aurora'
                 layout='responsive'
               />
-              <div className='aurora__content'>
-                <p className='aurora__content--top-text'>Nyproduktion</p>
-                <p className='aurora__content--bot-text'>Aurora</p>
-              </div>
-            </div>
-          </a>
-        </Link>
-        <Link href='/fastigheter' passHref>
-          <div className='ystad'>
-            <Image
-              src='/ystad-grid.webp'
-              height={248}
-              width={346}
-              alt='Fågelvy över fastighet i Ystad'
-              layout='responsive'
-            />
-            <div className='ystad__content'>
-              <p className='ystad__content--top-text'>Ystad</p>
+            </>
+            <div className='aurora__content'>
+              <p className='aurora__content--top-text'>Nyproduktion</p>
+              <p className='aurora__content--bot-text'>Aurora</p>
             </div>
           </div>
         </Link>
         <Link href='/fastigheter' passHref>
+          <>
+            <div className='ystad'>
+              <Image
+                src='/ystad-grid.webp'
+                height={248}
+                width={346}
+                alt='Fågelvy över fastighet i Ystad'
+                layout='responsive'
+              />
+              <div className='ystad__content'>
+                <p className='ystad__content--top-text'>Ystad</p>
+              </div>
+            </div>
+          </>
+        </Link>
+        <Link href='/fastigheter' passHref>
           <div className='malmo'>
-            <Image
-              src='/limhamn-grid.webp'
-              height={248}
-              width={346}
-              alt='Fågelvy över hus i Limhamn'
-              layout='responsive'
-            />
+            <a>
+              <Image
+                src='/limhamn-grid.webp'
+                height={248}
+                width={346}
+                alt='Fågelvy över hus i Limhamn'
+                layout='responsive'
+              />
+            </a>
             <div className='malmo__content'>
               <p className='malmo__content--top-text'>Malmö/Limhamn</p>
             </div>
