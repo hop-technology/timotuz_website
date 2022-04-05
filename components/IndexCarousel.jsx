@@ -8,7 +8,7 @@ const IndexCarousel = () => {
       <div className='index-carousel__large'>
         <div className='image-container'>
           <Image
-            src='/street1440p.webp'
+            src='/court1440p.webp'
             alt='Gatuvy nyproduktionsprojektet Aurora'
             height={1080}
             width={1920}
@@ -18,7 +18,7 @@ const IndexCarousel = () => {
         </div>
         <div className='image-container'>
           <Image
-            src='/court1440p.webp'
+            src='/street1440p.webp'
             alt='Gården till nyproduktionsprojektet Aurora'
             height={1080}
             width={1920}
@@ -30,7 +30,7 @@ const IndexCarousel = () => {
       <div className='index-carousel__small'>
         <div className='image-container'>
           <Image
-            src='/street1440p.webp'
+            src='/court1440p.webp'
             alt='Gatuvy nyproduktionsprojektet Aurora'
             height={500}
             width={700}
@@ -40,7 +40,7 @@ const IndexCarousel = () => {
         </div>
         <div className='image-container'>
           <Image
-            src='/court1440p.webp'
+            src='/street1440p.webp'
             alt='Gården till nyproduktionsprojektet Aurora'
             height={500}
             width={700}

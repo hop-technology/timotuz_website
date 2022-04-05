@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='copy-right'>COPYRIGHT 2020 TIMOTUZ HOLDING AB</p>
+      <p className='copy-right'>COPYRIGHT 2022 TIMOTUZ HOLDING AB</p>
     </div>
   )
 }
