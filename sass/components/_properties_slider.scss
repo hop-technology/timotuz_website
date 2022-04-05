@@ -106,6 +106,16 @@
     }
   }
 
+  &__button--fullscreen {
+    left: 0;
+    bottom: -5;
+
+    @include respond(tab-port) {
+      right: 1rem;
+      top: 1rem;
+    }
+  }
+
   &__dots {
     display: flex;
     list-style: none;

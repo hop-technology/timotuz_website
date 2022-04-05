@@ -1,9 +1,12 @@
+import React, { useState } from 'react'
 import { NextSeo } from 'next-seo'
 import HeroSection from '../components/HeroSection'
 import PropertiesCards from '../components/PropertiesCards'
+import SlideModal from '../components/SlideModal'
 import fastigheter_hero from '../public/fastigheter-hero-1920.webp'
 
 const properties = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const properties_text = {
     id: 1,
     tag_line: 'Fastigheter med hög standard i centrala lägen',
@@ -33,7 +36,8 @@ const properties = () => {
         text={properties_text}
       />
       <div className='properties'>
-        <PropertiesCards />
+        <PropertiesCards setIsOpen={setIsOpen} />
+        {isOpen && <SlideModal setIsOpen={setIsOpen} />}
       </div>
     </>
   )

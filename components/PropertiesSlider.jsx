@@ -1,12 +1,19 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
-import { DotButton, PrevButton, NextButton } from './SlideshowButton'
+import {
+  DotButton,
+  PrevButton,
+  NextButton,
+  FullScreen,
+} from './SlideshowButton'
 
-const PropertiesSlider = ({ image }) => {
+const PropertiesSlider = ({ image, setIsOpen }) => {
+
   const [emblaRef, embla] = useEmblaCarousel({ loop: true })
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(true)
   const [nextBtnEnabled, setNextBtnEnabled] = useState(true)
+  const [fullScreenBtnEnabled, setFullScreenBtnEnabled] = useState(true)
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [scrollSnaps, setScrollSnaps] = useState([])
 
@@ -44,8 +51,13 @@ const PropertiesSlider = ({ image }) => {
     )
   })
 
+  const handleClick = () => {
+    setIsOpen(true)
+  }
+
+
   return (
-    <div className='embla' ref={emblaRef} >
+    <div className='embla' ref={emblaRef}>
       <div className='embla__container'>{slideShow}</div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
@@ -58,6 +70,10 @@ const PropertiesSlider = ({ image }) => {
             name={`current image is ${index}`}
           />
         ))}
+        <FullScreen
+          onClick={handleClick}
+          enabled={fullScreenBtnEnabled}
+        />
       </div>
     </div>
   )
