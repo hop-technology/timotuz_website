@@ -35,8 +35,8 @@ const PropertiesSlider = ({ image, setIsOpen, imageId, currentSelection }) => {
   let slideShow = image?.map((image, index) => {
     return (
       <div className='embla__slide' key={index}>
-        <a>
-          <button id={imageId} onClick={(event) => handleClick(event)}>
+        <a id={imageId} onClick={(event) => handleClick(event)}>
+          <button>
             <Image
               src={image.photo.src}
               width={2000}
