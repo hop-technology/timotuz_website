@@ -156,10 +156,6 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   top: 0;
 
   &.fullscreen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
     background: $ig-black;
   }
 
