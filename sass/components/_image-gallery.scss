@@ -144,7 +144,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     z-index: 5;
 
     .image-gallery-content {
-      top: 50%;
+      top: 100%;
       transform: translateY(-50%);
     }
   }
