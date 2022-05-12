@@ -26,6 +26,11 @@ const Footer = () => {
         </div>
       </div>
       <p className='copy-right'>COPYRIGHT 2022 TIMOTUZ HOLDING AB</p>
+      <p className='footer-link'>
+        <a href='https://www.hoptech.se' target='_blank' rel='noreferrer'>
+          Built with ♥ by HOP technology
+        </a>
+      </p>
     </div>
   )
 }
