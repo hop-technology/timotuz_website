@@ -21,7 +21,7 @@ const Footer = () => {
             <p>info@timotuz.com</p>
           </div>
           <div className='content__contact--item'>
-            <p>Box 20, 239 21 Skanör</p>
+            <p>Mellangatan 58, 239 30 Skanör</p>
           </div>
         </div>
       </div>
