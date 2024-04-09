@@ -23,15 +23,20 @@ const properties_dynamic = [
       {
         id: 1,
         original: `https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-court.webp`,
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-court-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-court-thumb.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-court-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-court-thumb.webp',
         alt: 'Gatuvy av nyproduktion Aurora',
       },
       {
         id: 2,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/aurora-street-thumb.webp',
         alt: 'Innegård av nyproduktion Aurora',
       },
     ],
@@ -54,30 +59,42 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-yard-thumb.webp',
         alt: 'Fågelvy över fastighet Fredrik 16, Ystad',
       },
       {
         id: 2,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-street-thumb.webp',
         alt: 'Fågelvy över fastighet Fredrik 16 med gågata, Ystad',
       },
       {
         id: 3,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-angle-thumb.webp',
         alt: 'Fågelvy över området vid Fredrik 16, Ystad',
       },
       {
         id: 4,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/ystad-sushi-thumb.webp',
         alt: 'Restaurang på markplan',
       },
     ],
@@ -100,30 +117,42 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-front-thumb.webp',
         alt: 'Fastighet Strutsen 25 framifrån, Limhamn',
       },
       {
         id: 1,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-thumb.webp',
         alt: 'Fastighet Strutsen 25 bakifrån, Limhamn',
       },
       {
         id: 3,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-back-2-thumb.webp',
         alt: 'Fastighet Strutsen 25 bakgård, Limhamn',
       },
       {
         id: 4,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/limhamn-bench-thumb.webp',
         alt: 'Fastighet Strutsen 25 bakgård uteplats, Limhamn',
       },
     ],
@@ -133,17 +162,20 @@ const properties_dynamic = [
     district: 'Helsingborg',
     name: 'Mörsaren Västra 6',
     description:
-      'Fastigheten ligger på det mest attraktiva och expansiva industriområdet Berga i Norra Helsingborg. På endast 10 minuter med bil nås Helsingborg centrum. Buss avgår ett stenkast från fastigheten till centrala Helsingborg och från Maria station som ligger inom promenadavstånd från fastigheten avgår Pågatågen.',
+      'Fastigheten ligger på det mest attraktiva och expansiva industriområdet Berga i norra Helsingborg. På endast 10 minuter med bil nås Helsingborg centrum. Buss avgår ett stenkast från fastigheten till centrala Helsingborg och från Maria station som ligger inom promenadavstånd från fastigheten avgår Pågatågen. Under 2022-2023 har fastigheten yta utökats med en tillbyggnad om cirka 650 kvm',
     address: 'Pistolgatan 3, Helsingborg',
     type: 'Industrilokal',
-    lager: '480 kvm',
+    lager: '1130 kvm',
     kontor: '120 kvm',
     images: [
       {
         id: 1,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-street.webp',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-full.webp',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-thumb.webp',
+        original:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-street.webp',
+        fullscreen:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-full.webp',
+        thumbnail:
+          'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/helsingborg-thumb.webp',
         alt: 'Industri fastighet Mörsaren Västra 6, Helsingborg',
       },
     ],
