@@ -46,7 +46,7 @@ const Footer = () => {
               src='/linkedin.png'
               height={40}
               width={40}
-              alt='Linkedin'
+              alt='Linkedin link'
             />
           </a>
           <a
@@ -57,7 +57,7 @@ const Footer = () => {
               src='/instagram.png'
               height={40}
               width={40}
-              alt='instagram'
+              alt='instagram link'
             />
           </a>
           <p className='copy-right'>COPYRIGHT 2022 TIMOTUZ HOLDING AB</p>
