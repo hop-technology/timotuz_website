@@ -25,12 +25,48 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className='copy-right'>COPYRIGHT 2022 TIMOTUZ HOLDING AB</p>
-      <p className='footer-link'>
-        <a href='https://www.hoptech.se' target='_blank' rel='noreferrer'>
-          Built with ♥ by HOP technology
-        </a>
-      </p>
+      <div>
+        <div className='footer-link'>
+          <div>
+            <a
+              href='https://www.facebook.com/tzfastigheter'
+              target='_blank'
+              rel='noreferrer'>
+              <Image
+                src='/facebook.png'
+                height={40}
+                width={40}
+                alt='facebook link'
+              />
+            </a>
+            <a
+              href='https://www.linkedin.com/company/timotuz/'
+              target='_blank'
+              rel='noreferrer'>
+              <Image
+                src='/linkedin.png'
+                height={40}
+                width={40}
+                alt='Linkedin link'
+              />
+            </a>
+            <a
+              href='https://www.instagram.com/timotuzfastigheter/'
+              target='_blank'
+              rel='noreferrer'>
+              <Image
+                src='/instagram.png'
+                height={40}
+                width={40}
+                alt='instagram link'
+              />
+            </a>
+          </div>
+          <div>
+            <p className='copy-right'>COPYRIGHT 2022 TIMOTUZ HOLDING AB</p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
