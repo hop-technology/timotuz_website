@@ -46,11 +46,13 @@
     color: rgba(255, 255, 255, 0.733);
   }
   .footer-link {
+    display: flex;
     text-align: center;
     font-weight: 300;
     font-size: 1.2rem;
     padding: 2rem 0;
     cursor: pointer;
+    flex-direction: column;
 
     a {
       padding: 2rem;
