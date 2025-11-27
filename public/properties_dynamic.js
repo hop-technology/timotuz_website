@@ -193,16 +193,16 @@ const properties_dynamic = [
     images: [
       {
         id: 1,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_1',
-        fullscreen:'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_1',
-        thumbnail:'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_1'
+        original: '/höllviken_1.webp',
+        fullscreen:'/höllviken_1.webp',
+        thumbnail:'/höllviken_1.webp'
 
       },
       {
         id: 2,
-        original: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_2',
-        fullscreen: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_2',
-        thumbnail: 'https://timotuz-website-git-fork-1cim-add-slider-imgs-hop-tech.vercel.app/höllviken_2'
+        original: '/höllviken_2.webp',
+        fullscreen: '/höllviken_2.webp',
+        thumbnail: '/höllviken_2.webp'
       }
     ]
   }
