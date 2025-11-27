@@ -180,6 +180,32 @@ const properties_dynamic = [
       },
     ],
   },
+  {
+    id: 5,
+    district: 'Höllviken',
+    name: 'Hövdingavägen 2',
+    description:'Fastigheten uppfördes 2016 och består av åtta välplanerade toppmoderna hyresbostäder i Rängsand, Höllviken. Samtliga bostäder är tre rum och kök med genomtänkta planlösningar, goda ljusinsläpp samt egen trädgård eller veranda. Fastigheten är utrustad med 100 solceller och har parkeringsplatser med laddstolpar. Läget erbjuder närhet till hav, natur och Höllvikens centrum, och Malmö nås på cirka 20 minuter.',
+    address:  'Hövdingavägen 2, Höllviken',
+    type: 'Bostäder',
+    housing: '8',
+    boa: '584 kvm',
+    parking: '8 st',
+    images: [
+      {
+        id: 1,
+        original: '/höllviken_1.webp',
+        fullscreen:'/höllviken_1.webp',
+        thumbnail:'/höllviken_1.webp'
+
+      },
+      {
+        id: 2,
+        original: '/höllviken_2.webp',
+        fullscreen: '/höllviken_2.webp',
+        thumbnail: '/höllviken_2.webp'
+      }
+    ]
+  }
 ]
 
 export default properties_dynamic
